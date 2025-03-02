@@ -3,14 +3,14 @@ main:
 #   - title: "About Me"
 #     url: "/#about-me"
 
-  - title: "News"
-    url: "/#🔥-news"
+  # - title: "News"
+  #   url: "/#🔥-news"
 
-  - title: "Publications"
-    url: "/#📝-publications"
+  # - title: "Publications"
+  #   url: "/#📝-publications"
 
-  - title: "In Submission"
-    url: "/#🍀-in-submission"
+  # - title: "In Submission"
+  #   url: "/#🍀-in-submission"
 
-  - title: "Educations"
-    url: "/#📖-educations"
+  # - title: "Educations"
+  #   url: "/#📖-educations"
