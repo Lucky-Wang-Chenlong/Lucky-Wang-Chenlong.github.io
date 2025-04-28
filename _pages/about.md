@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a third-year undergraduate student in the School of Computer Science and Technology at [HUST](https://english.hust.edu.cn/). At present, I am working with Prof. [Yao Wan](http://wanyao.me/) at HUST. I am currently seeking a Ph.D position in Machine Learning / Software Engineering for Fall 2026.
+I am a third-year undergraduate student in the School of Computer Science and Technology at [HUST](https://english.hust.edu.cn/). At present, I am working with Prof. [Yao Wan](http://wanyao.me/) at HUST. I am currently seeking a Ph.D position in Machine Learning for Fall 2026.
 
 My research interests lie in the intersection of **Machine Learning** and **Software Engineering**, especially on 
 - **Reasoning**: reasoning interpretability, code reasoning, mllm reasoning.
@@ -26,7 +26,7 @@ My research interests lie in the intersection of **Machine Learning** and **Soft
 
 
 # 🔥 News
-- *2025.01*: &nbsp;🎉 One paper has been accepted by **ICLR 2025**! Congratulations to [Dongping](https://scholar.google.com/citations?user=g92Ri7YAAAAJ&hl=zh-CN)!
+- *2025.01*: &nbsp;🎉 One paper has been accepted by **ICLR 2025**!
 
 # 📝 Publications 
 - ![ICLR 2025](https://img.shields.io/badge/ICLR-2025-e87213) [GUI-World: A Dataset for GUI-oriented Multimodal LLM-based Agents](https://arxiv.org/abs/2406.10819) Dongping Chen \*, Yue Huang \*, Siyuan Wu \*, Jingyu Tang \*, Liuyi Chen, Yilin Bai, Zhigang He, **Chenlong Wang**, Huichi Zhou, Yiqiang Li, Tianshuo Zhou, Yue Yu, Chujie Gao, Qihui Zhang, Yi Gui, Zhen Li, Yao Wan†, Pan Zhou†, Jianfeng Gao†, Lichao Sun†
