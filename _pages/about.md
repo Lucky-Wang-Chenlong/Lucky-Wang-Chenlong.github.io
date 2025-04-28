@@ -20,8 +20,9 @@ redirect_from:
 I am a third-year undergraduate student in the School of Computer Science and Technology at [HUST](https://english.hust.edu.cn/). At present, I am working with Prof. [Yao Wan](http://wanyao.me/) at HUST. I am currently seeking a Ph.D position in Machine Learning / Software Engineering for Fall 2026.
 
 My research interests lie in the intersection of **Machine Learning** and **Software Engineering**, especially on 
-- **Code Intelligence** : code generation, code execution, code reasoning.
-- **Trustworthy AI** : interpretability, code knowledge.
+- **Reasoning**: reasoning interpretability, code reasoning, mllm reasoning.
+- **Code Intelligence** : code generation, code execution.
+- **Trustworthy AI** : interpretability, knowledge editing.
 
 
 # 🔥 News
