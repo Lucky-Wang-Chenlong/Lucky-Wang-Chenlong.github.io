@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Chenlong Wang"
-description              : "A third-year undergraduate student at HUST"
+description              : "A thousand times over."
 repository               : "Lucky-voyage/chenlong-wang.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Chenlong Wang"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "Huazhong University of Science and Technology"
+  bio              : "A third-year undergraduate student at HUST"
   location         : "Wuhan, China"
   employer         :
   pubmed           : 
