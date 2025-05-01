@@ -32,9 +32,9 @@ My research interests lie in the intersection of **Machine Learning** and **Soft
 
 # 📝 Publications 
 - ![ICLR 2025](https://img.shields.io/badge/ICLR-2025-e87213) [GUI-World: A Dataset for GUI-oriented Multimodal LLM-based Agents](https://arxiv.org/abs/2406.10819) Dongping Chen \*, Yue Huang \*, Siyuan Wu \*, Jingyu Tang \*, Liuyi Chen, Yilin Bai, Zhigang He, **Chenlong Wang**, Huichi Zhou, Yiqiang Li, Tianshuo Zhou, Yue Yu, Chujie Gao, Qihui Zhang, Yi Gui, Zhen Li, Yao Wan†, Pan Zhou†, Jianfeng Gao†, Lichao Sun†
+- ![ICML 2025](https://img.shields.io/badge/Preprint-2025-87acc7) [CodeSync: Synchronizing Large Language Models with Dynamic Code Evolution at Scale](https://arxiv.org/abs/2502.16645) **Chenlong Wang** \*, Zhaoyang Chu \*, Zhengxiang Cheng \*, Xuyi Yang, Kaiyue Qiu, Yao Wan†, Zhou Zhao†, Xuanhua Shi†, Dongping Chen†
 
 # 🍀 In Submission
-- ![Preprint](https://img.shields.io/badge/Preprint-2025-87acc7) [CodeSync: Synchronizing Large Language Models with Dynamic Code Evolution at Scale](https://arxiv.org/abs/2502.16645) **Chenlong Wang** \*, Zhaoyang Chu \*, Zhengxiang Cheng \*, Xuyi Yang, Kaiyue Qiu, Yao Wan†, Zhou Zhao†, Xuanhua Shi†, Dongping Chen†
 
 
 # 📖 Educations
