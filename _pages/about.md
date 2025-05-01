@@ -26,13 +26,19 @@ My research interests lie in the intersection of **Machine Learning** and **Soft
 - **Code Intelligence** : code generation, code execution.
 - **Trustworthy AI** : interpretability, knowledge editing.
 
+Here is my [CV](https://drive.google.com/file/d/13tjEFEF5Lehm8jajiyQTGLJJwD3h7v7K/view?usp=drive_link). Please feel free to contact me!
 
 # 🔥 News
 - *2025.01*: &nbsp;🎉 One paper has been accepted by **ICLR 2025**!
 
 # 📝 Publications 
-- ![ICML 2025](https://img.shields.io/badge/ICML-2025-87acc7) [CodeSync: Synchronizing Large Language Models with Dynamic Code Evolution at Scale](https://arxiv.org/abs/2502.16645) **Chenlong Wang** \*, Zhaoyang Chu \*, Zhengxiang Cheng \*, Xuyi Yang, Kaiyue Qiu, Yao Wan†, Zhou Zhao†, Xuanhua Shi†, Hai Jin†, Dongping Chen†
-- ![ICLR 2025](https://img.shields.io/badge/ICLR-2025-e87213) [GUI-World: A Dataset for GUI-oriented Multimodal LLM-based Agents](https://arxiv.org/abs/2406.10819) Dongping Chen \*, Yue Huang \*, Siyuan Wu \*, Jingyu Tang \*, Liuyi Chen, Yilin Bai, Zhigang He, **Chenlong Wang**, Huichi Zhou, Yiqiang Li, Tianshuo Zhou, Yue Yu, Chujie Gao, Qihui Zhang, Yi Gui, Zhen Li, Yao Wan†, Pan Zhou†, Jianfeng Gao†, Lichao Sun†
+- ![ICML 2025](https://img.shields.io/badge/ICML-2025-87acc7) [CodeSync: Synchronizing Large Language Models with Dynamic Code Evolution at Scale](https://arxiv.org/abs/2502.16645)
+
+  **Chenlong Wang**\*, Zhaoyang Chu\*, Zhengxiang Cheng\*, Xuyi Yang, Kaiyue Qiu, Yao Wan†, Zhou Zhao†, Xuanhua Shi†, Hai Jin†, Dongping Chen†
+  
+- ![ICLR 2025](https://img.shields.io/badge/ICLR-2025-e87213) [GUI-World: A Dataset for GUI-oriented Multimodal LLM-based Agents](https://arxiv.org/abs/2406.10819)
+
+  Dongping Chen\*, Yue Huang\*, Siyuan Wu\*, Jingyu Tang\*, Liuyi Chen, Yilin Bai, Zhigang He, **Chenlong Wang**, Huichi Zhou, Yiqiang Li, Tianshuo Zhou, Yue Yu, Chujie Gao, Qihui Zhang, Yi Gui, Zhen Li, Yao Wan†, Pan Zhou†, Jianfeng Gao†, Lichao Sun†
 
 <!-- 🍀 In Submission -->
 
