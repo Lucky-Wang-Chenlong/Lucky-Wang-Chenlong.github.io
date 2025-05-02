@@ -58,7 +58,7 @@ Here is my [CV](https://drive.google.com/file/d/13tjEFEF5Lehm8jajiyQTGLJJwD3h7v7
 
 [[PDF]](https://arxiv.org/pdf/2406.10819) [[Github]](https://github.com/Dongping-Chen/GUI-World) [[Website]](https://gui-world.github.io)
 
-**Dongping Chen**\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhigang He, Chenlong Wang, Huichi Zhou, Yiqiang Li, Tianshuo Zhou, Yue Yu, Chujie Gao, Qihui Zhang, Yi Gui, Zhen Li, Yao Wan†, Pan Zhou†, Jianfeng Gao, Lichao Sun
+Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhigang He, **Chenlong Wang**, Huichi Zhou, Yiqiang Li, Tianshuo Zhou, Yue Yu, Chujie Gao, Qihui Zhang, Yi Gui, Zhen Li, Yao Wan†, Pan Zhou†, Jianfeng Gao, Lichao Sun
 
 </div>
 </div>
