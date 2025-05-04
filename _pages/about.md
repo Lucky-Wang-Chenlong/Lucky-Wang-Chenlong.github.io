@@ -30,8 +30,8 @@ My research interests lie in the intersection of **Machine Learning** and **Soft
 Here is my [CV](https://drive.google.com/file/d/13tjEFEF5Lehm8jajiyQTGLJJwD3h7v7K/view?usp=drive_link). Please feel free to contact me!
 
 # 🔥 News
-- *2025.05*: &nbsp;🎉 Our paper, CodeSync, has been accepted by **ICML 2025**!
-- *2025.01*: &nbsp;🎉 One paper, GUI-World, has been accepted by **ICLR 2025**!
+- *2025.05*: &nbsp;🎉 Our paper, **CodeSync**, has been accepted by **ICML 2025**!
+- *2025.01*: &nbsp;🎉 One paper, **GUI-World**, has been accepted by **ICLR 2025**!
 
 # 📝 Publications 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025</div><img src='images/poster/codesync.png' alt="sym" width="100%"></div></div>
