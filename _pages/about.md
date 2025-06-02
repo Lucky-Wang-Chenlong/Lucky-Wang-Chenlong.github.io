@@ -72,6 +72,11 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu\*, Jingyu Tang\*, Liuyi Chen, Yilin Bai,
 
 <!-- 🍀 In Submission -->
 
+# 🍀 In Submission
+**Wait, Do We Really Need to "Wait"? Towards Training-Free Efficient Reasoning in R1-style Models**<br>
+**Chenlong Wang\* **, Yuanning Feng, Dongping Chen, Zhaoyang Chu, Ranjay Krishna†, Tianyi Zhou†<br>
+Collaborated with Tianyi Zhou from [UMD](https://umd.edu/) and Ranjay Krishna from [UW](https://www.washington.edu/)
+
 
 # 📖 Educations
 - *2022.09 - 2026.06(expected)*, BEng., Huazhong University of Science and Technology.
