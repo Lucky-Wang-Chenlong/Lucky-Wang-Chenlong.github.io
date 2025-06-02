@@ -22,8 +22,8 @@ I am a third-year undergraduate student in the School of Computer Science and Te
 At present, I am working with Prof. [Tianyi Zhou](https://tianyizhou.github.io/) at [UMD](https://umd.edu/). 
 I am currently seeking a Ph.D position in Machine Learning for Fall 2026.
 
-My research interests lie in the intersection of **Machine Learning** and **Software Engineering**, especially on 
-- **Reasoning**: reasoning interpretability, code reasoning, mllm reasoning.
+My research interests lie in **Machine Learning** and **Large Language Model**, especially on
+- **Reasoning & Reinforcement Learning**: reasoning interpretability, MLLM reasoning, efficient reasoning, code reasoning, reward hack.
 - **Code Intelligence** : code generation, code execution.
 - **Trustworthy AI** : interpretability, knowledge editing.
 
@@ -73,9 +73,9 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu\*, Jingyu Tang\*, Liuyi Chen, Yilin Bai,
 <!-- 🍀 In Submission -->
 
 # 🍀 In Submission
-**Wait, Do We Really Need to "Wait"? Towards Training-Free Efficient Reasoning in R1-style Models**<br>
-**Chenlong Wang**\*, Yuanning Feng, Dongping Chen, Zhaoyang Chu, Ranjay Krishna†, Tianyi Zhou†<br>
-Collaborated with **Tianyi Zhou** from [UMD](https://umd.edu/) and **Ranjay Krishna** from [UW](https://www.washington.edu/)
+- **Wait, Do We Really Need to "Wait"? Towards Training-Free Efficient Reasoning in R1-style Models**<br>
+  **Chenlong Wang**\*, Yuanning Feng, Dongping Chen, Zhaoyang Chu, Ranjay Krishna†, Tianyi Zhou†<br>
+  Collaborated with **Tianyi Zhou** from [UMD](https://umd.edu/) and **Ranjay Krishna** from [UW](https://www.washington.edu/)
 
 
 # 📖 Educations
