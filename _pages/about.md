@@ -41,7 +41,7 @@ Here is my [CV](https://drive.google.com/file/d/13tjEFEF5Lehm8jajiyQTGLJJwD3h7v7
 
 [[PDF]](https://arxiv.org/abs/2502.16645) [[Github]](https://github.com/Lucky-Wang-Chenlong/CodeSync)
 
- **Chenlong Wang**\*, Zhaoyang Chu\*, Zhengxiang Cheng\*, Xuyi Yang, Kaiyue Qiu, Yao Wan†, Zhou Zhao†, Xuanhua Shi†, Hai Jin†, Dongping Chen†
+ **Chenlong Wang**\*, Zhaoyang Chu\*, Zhengxiang Cheng\*, Xuyi Yang, Kaiyue Qiu, Yao Wan†, Zhou Zhao†, Xuanhua Shi†, Hai Jin†, Dongping Chen‡
 
 </div>
 </div>
@@ -59,10 +59,12 @@ Here is my [CV](https://drive.google.com/file/d/13tjEFEF5Lehm8jajiyQTGLJJwD3h7v7
 
 [[PDF]](https://arxiv.org/pdf/2406.10819) [[Github]](https://github.com/Dongping-Chen/GUI-World) [[Website]](https://gui-world.github.io)
 
-Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhigang He, **Chenlong Wang**, Huichi Zhou, Yiqiang Li, Tianshuo Zhou, Yue Yu, Chujie Gao, Qihui Zhang, Yi Gui, Zhen Li, Yao Wan†, Pan Zhou†, Jianfeng Gao, Lichao Sun
+Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhigang He, **Chenlong Wang**, Huichi Zhou, Yiqiang Li, Tianshuo Zhou, Yue Yu, Chujie Gao, Qihui Zhang, Yi Gui, Zhen Li, Yao Wan†, Pan Zhou†, Jianfeng Gao†, Lichao Sun†
 
 </div>
 </div>
+
+**P.S.** \* indicates equal contribution. † indicates corresponding author. ‡ indicates project leaders.
 
 <!-- 
 - ![ICLR 2025](https://img.shields.io/badge/ICLR-2025-e87213) [GUI-World: A Dataset for GUI-oriented Multimodal LLM-based Agents](https://arxiv.org/abs/2406.10819)
@@ -74,9 +76,10 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu\*, Jingyu Tang\*, Liuyi Chen, Yilin Bai,
 
 # 🍀 In Submission
 - **Wait, Do We Really Need to "Wait"? Towards Training-Free Efficient Reasoning in R1-style Models**<br>
-  **Chenlong Wang**\*, Yuanning Feng, Dongping Chen, Zhaoyang Chu, Ranjay Krishna†, Tianyi Zhou†<br>
+  **Chenlong Wang**, Yuanning Feng, Dongping Chen‡, Zhaoyang Chu, Ranjay Krishna†, Tianyi Zhou†<br>
   Collaborated with **Tianyi Zhou** from [UMD](https://umd.edu/) and **Ranjay Krishna** from [UW](https://www.washington.edu/)
 
+**P.S.** \* indicates equal contribution. † indicates corresponding author. ‡ indicates project leaders.
 
 # 📖 Educations
 - *2022.09 - 2026.06(expected)*, BEng., Huazhong University of Science and Technology.
