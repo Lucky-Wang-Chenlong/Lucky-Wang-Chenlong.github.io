@@ -75,9 +75,9 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu\*, Jingyu Tang\*, Liuyi Chen, Yilin Bai,
 <!-- 🍀 In Submission -->
 
 # 🍀 In Submission
-- **Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves Reasoning Efficiency**<br>
+- **Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves Reasoning Efficiency** [[PDF]](https://arxiv.org/abs/2506.08343)<br>
   **Chenlong Wang**, Yuanning Feng, Dongping Chen‡, Zhaoyang Chu, Ranjay Krishna†, Tianyi Zhou†<br>
-  Collaborated with [**Tianyi Zhou**](https://tianyizhou.github.io/) from [UMD](https://umd.edu/) and [**Ranjay Krishna**](https://ranjaykrishna.com/index.html) from [UW](https://www.washington.edu/)
+  Collaborated with [**Tianyi Zhou**](https://tianyizhou.github.io/) from [UMD](https://umd.edu/) and [**Ranjay Krishna**](https://ranjaykrishna.com/index.html) from [UW](https://www.washington.edu/).
 
 **P.S.** \* indicates equal contribution. † indicates corresponding author. ‡ indicates project leaders.
 
