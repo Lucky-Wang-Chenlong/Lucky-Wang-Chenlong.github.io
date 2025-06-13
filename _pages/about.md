@@ -75,9 +75,9 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu\*, Jingyu Tang\*, Liuyi Chen, Yilin Bai,
 <!-- 🍀 In Submission -->
 
 # 🍀 In Submission
-- **Wait, Do We Really Need to "Wait"? Towards Training-Free Efficient Reasoning in R1-style Models**<br>
+- **Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves Reasoning Efficiency**<br>
   **Chenlong Wang**, Yuanning Feng, Dongping Chen‡, Zhaoyang Chu, Ranjay Krishna†, Tianyi Zhou†<br>
-  Collaborated with **Tianyi Zhou** from [UMD](https://umd.edu/) and **Ranjay Krishna** from [UW](https://www.washington.edu/)
+  Collaborated with [**Tianyi Zhou**](https://tianyizhou.github.io/) from [UMD](https://umd.edu/) and [**Ranjay Krishna**](https://ranjaykrishna.com/index.html) from [UW](https://www.washington.edu/)
 
 **P.S.** \* indicates equal contribution. † indicates corresponding author. ‡ indicates project leaders.
 
