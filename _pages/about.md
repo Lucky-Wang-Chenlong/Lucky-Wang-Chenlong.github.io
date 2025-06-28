@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # About me
 
-I am a third-year undergraduate student in the School of Computer Science and Technology at [HUST](https://english.hust.edu.cn/). I began my research journey while collaborating with Prof. [Yao Wan](http://wanyao.me/) at HUST, and join his undergraduate team, [One Lab](https://oneslab.github.io/).
+I am a third-year undergraduate student in the School of Computer Science and Technology at [HUST](https://english.hust.edu.cn/). I began my research journey while collaborating with Prof. [Yao Wan](http://wanyao.me/) at HUST, and join his undergraduate team, [ONE Lab](https://oneslab.github.io/).
 At present, I am working with Prof. [Tianyi Zhou](https://tianyizhou.github.io/) at [UMD](https://umd.edu/). 
 I am currently seeking a Ph.D position in Machine Learning for Fall 2026.
 
@@ -81,6 +81,13 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu\*, Jingyu Tang\*, Liuyi Chen, Yilin Bai,
 
 **P.S.** \* indicates equal contribution. † indicates corresponding author. ‡ indicates project leaders.
 
-# 📖 Educations
+# 📖 Experience
+- *2025.04 - Present*, Remote Research in University of Maryland.
+  - Explore the inherent mechanism in large reasoning models and conduct in-depth research on efficient multimodal reasoning with `NoWait`.
+
+- *2024.04 - Present*, Research Intern in [ONE Lab](https://oneslab.github.io/) at Huazhong University of Science and Technology.
+  - Code generation & interpertability on code knowledge updating task. We propose `CodeSync`, an automated data engine for code knowledge updating.
+  - Research on LLM-based GUI Agents. We propose a dataset `GUI-World` focusing on GUI-oriented capabilities in current MLLMs.
+  
 - *2022.09 - 2026.06(expected)*, BEng., Huazhong University of Science and Technology.
 
