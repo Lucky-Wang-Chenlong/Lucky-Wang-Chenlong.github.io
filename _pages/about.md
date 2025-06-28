@@ -23,8 +23,8 @@ At present, I am working with Prof. [Tianyi Zhou](https://tianyizhou.github.io/)
 I am currently seeking a Ph.D position in Machine Learning for Fall 2026.
 
 My research interests lie in **Machine Learning** and **Large Language Model**, especially on
-- **Reasoning & Reinforcement Learning**: reasoning interpretability, MLLM reasoning, efficient reasoning, code reasoning, reward hack.
-- **Code Intelligence** : code generation, code execution.
+- **Reasoning**: reasoning interpretability, MLLM reasoning, reward hack.
+- **World Model & Reinforcement Learning**: Self-evolution, RLVR.
 - **Trustworthy AI** : interpretability, knowledge editing.
 
 Here is my [CV](https://drive.google.com/file/d/13tjEFEF5Lehm8jajiyQTGLJJwD3h7v7K/view?usp=drive_link). Please feel free to contact me!
@@ -82,12 +82,12 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu\*, Jingyu Tang\*, Liuyi Chen, Yilin Bai,
 **P.S.** \* indicates equal contribution. † indicates corresponding author. ‡ indicates project leaders.
 
 # 📖 Experience
-- *2025.04 - Present*, Remote Research in University of Maryland.
+- ***2025.04 - Present***, Remote Research in **University of Maryland**.
   - Explore the inherent mechanism in large reasoning models and conduct in-depth research on efficient multimodal reasoning with `NoWait`.
 
-- *2024.04 - Present*, Research Intern in [ONE Lab](https://oneslab.github.io/) at Huazhong University of Science and Technology.
+- ***2024.04 - Present***, Research Intern in [ONE Lab](https://oneslab.github.io/) at **Huazhong University of Science and Technology**.
   - Code generation & interpertability on code knowledge updating task. We propose `CodeSync`, an automated data engine for code knowledge updating.
   - Research on LLM-based GUI Agents. We propose a dataset `GUI-World` focusing on GUI-oriented capabilities in current MLLMs.
   
-- *2022.09 - 2026.06(expected)*, BEng., Huazhong University of Science and Technology.
+- ***2022.09 - 2026.06 (expected)***, BEng., Huazhong University of Science and Technology.
 
