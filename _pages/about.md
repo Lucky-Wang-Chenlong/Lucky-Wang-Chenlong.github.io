@@ -40,14 +40,14 @@ Here is my [CV](https://drive.google.com/file/d/13tjEFEF5Lehm8jajiyQTGLJJwD3h7v7
 <br>
 
 # 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2025</div><img src='images/poster/nowait.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2025 Findings</div><img src='images/poster/nowait.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Wait, We Don’t Need to “Wait”! Removing Thinking Tokens Improves Reasoning Efficiency** 
 
 [[PDF]](https://arxiv.org/abs/2506.08343) 
 
-**Chenlong Wang**\*, Yuanning Feng, Dongping Chen, Zhaoyang Chu, Ranjay Krishna, Tianyi Zhou†
+**Chenlong Wang**, Yuanning Feng, Dongping Chen, Zhaoyang Chu, Ranjay Krishna, Tianyi Zhou†
 
 </div>
 </div>
@@ -85,11 +85,12 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhi
 # 🍀 In Submission
 
 **P.S.** \* indicates equal contribution. † indicates corresponding author. ‡ indicates project leaders.
--->
+
 ---
 <br>
-
+-->
 # 📖 Experience
+
 - ***2025.04 - Present***, Remote Research in **University of Maryland**.
   - Explore the inherent mechanism in large reasoning models and conduct in-depth research on efficient multimodal reasoning with `NoWait`.
 
