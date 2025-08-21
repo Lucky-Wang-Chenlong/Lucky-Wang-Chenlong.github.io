@@ -32,7 +32,7 @@ Here is my [CV](https://drive.google.com/file/d/13tjEFEF5Lehm8jajiyQTGLJJwD3h7v7
 ---
 
 # 🔥 News
-- *2025.08*: &nbsp;🎉 Our paper, **NoWait**, has been accepted at **ACL 2025 Findings**!
+- *2025.08*: &nbsp;🎉 Our paper, **NoWait**, has been accepted at **EMNLP 2025 Findings**!
 - *2025.05*: &nbsp;🎉 Our paper, **CodeSync**, has been accepted at **ICML 2025**!
 - *2025.01*: &nbsp;🎉 One paper, **GUI-World**, has been accepted at **ICLR 2025**!
 
@@ -40,12 +40,12 @@ Here is my [CV](https://drive.google.com/file/d/13tjEFEF5Lehm8jajiyQTGLJJwD3h7v7
 <br>
 
 # 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/poster/GUI-world.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2025</div><img src='images/poster/nowait.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Wait, We Don’t Need to “Wait”! Removing Thinking Tokens Improves Reasoning Efficiency** 
 
-[[PDF]](https://arxiv.org/pdf/2406.10819) 
+[[PDF]](https://arxiv.org/abs/2506.08343) 
 
 **Chenlong Wang**\*, Yuanning Feng, Dongping Chen, Zhaoyang Chu, Ranjay Krishna, Tianyi Zhou†
 
@@ -80,22 +80,12 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhi
 **P.S.** \* indicates equal contribution. † indicates corresponding author. ‡ indicates project leaders.
 
 <!-- 
-- ![ICLR 2025](https://img.shields.io/badge/ICLR-2025-e87213) [GUI-World: A Dataset for GUI-oriented Multimodal LLM-based Agents](https://arxiv.org/abs/2406.10819)
-
-Dongping Chen\*, Yue Huang\*, Siyuan Wu\*, Jingyu Tang\*, Liuyi Chen, Yilin Bai, Zhigang He, **Chenlong Wang**, Huichi Zhou, Yiqiang Li, Tianshuo Zhou, Yue Yu, Chujie Gao, Qihui Zhang, Yi Gui, Zhen Li, Yao Wan†, Pan Zhou†, Jianfeng Gao†, Lichao Sun†
--->
-
-<!-- 🍀 In Submission -->
-
 ---
 
 # 🍀 In Submission
-- **Wait, We Don't Need to "Wait"! Removing Thinking Tokens Improves Reasoning Efficiency** [[PDF]](https://arxiv.org/abs/2506.08343)<br>
-  **Chenlong Wang**, Yuanning Feng, Dongping Chen‡, Zhaoyang Chu, Ranjay Krishna†, Tianyi Zhou†<br>
-  Collaborated with [**Tianyi Zhou**](https://tianyizhou.github.io/) from [UMD](https://umd.edu/) and [**Ranjay Krishna**](https://ranjaykrishna.com/index.html) from [UW](https://www.washington.edu/).
 
 **P.S.** \* indicates equal contribution. † indicates corresponding author. ‡ indicates project leaders.
-
+-->
 ---
 <br>
 
