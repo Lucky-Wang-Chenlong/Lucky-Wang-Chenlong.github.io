@@ -18,8 +18,9 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # About me
 
-I am a third-year undergraduate student in the School of Computer Science and Technology at [HUST](https://english.hust.edu.cn/). I began my research journey while collaborating with Prof. [Yao Wan](http://wanyao.me/) at HUST, and join his undergraduate team, [ONE Lab](https://oneslab.github.io/).
+I am a third-year undergraduate student in the School of Computer Science and Technology at [HUST](https://english.hust.edu.cn/). I began my research journey while working with Prof. [Yao Wan](http://wanyao.me/) at HUST, and join his undergraduate research team, [ONE Lab](https://oneslab.github.io/).
 At present, I am collaborating with Prof. [Tianyi Zhou](https://tianyizhou.github.io/) at [UMD](https://umd.edu/) and will be joining the [CCVL Lab at JHU](https://ccvl.jhu.edu/) as an on-site intern, co-supervised by [Yaoyao Liu](https://yaoyaoliu.web.illinois.edu/) and [Jieneng Chen](https://beckschen.github.io/).
+
 I am currently seeking a Ph.D position in Machine Learning for Fall 2026.
 
 My research interests lie in **Machine Learning** and **Large Language Model**, especially on
@@ -90,9 +91,9 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhi
 <br>
 -->
 # 📖 Experience
-- ***2025.09 - Present***, On-site Research in **Johns Hopkins University**.
+- ***2025.09 - Present***, On-site Research Intern in **Johns Hopkins University**.
 
-- ***2025.04 - Present***, Remote Research in **University of Maryland**.
+- ***2025.04 - Present***, Remote Research Intern in **University of Maryland**.
   - Explore the inherent mechanism in large reasoning models and conduct in-depth research on efficient multimodal reasoning with `NoWait`.
   - Evaluate and alleviate the reward hack.
 
