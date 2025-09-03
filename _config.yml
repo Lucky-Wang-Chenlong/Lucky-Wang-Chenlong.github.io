@@ -7,14 +7,14 @@
 
 # Site Settings
 title                    : "Chenlong Wang"
-description              : "A third-year undergraduate student at HUST"
+description              : "A final-year undergraduate student at HUST."
 repository               : "Lucky-voyage/chenlong-wang.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
 google_analytics_id      :  "ifVO9D8AAAAJ"
 
-# SEO Related
+# SEO Related..
 google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
 bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
 baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
