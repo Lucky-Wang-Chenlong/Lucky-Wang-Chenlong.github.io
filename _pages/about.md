@@ -91,7 +91,7 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhi
 <br>
 -->
 # 📖 Experience
-- ***2025.09 - Present***, On-site Research Intern in **Johns Hopkins University**.
+- ***2025.09 - Present***, On-site Research Intern in [CCVL](https://ccvl.jhu.edu/) at **Johns Hopkins University**.
 
 - ***2025.04 - Present***, Remote Research Intern in **University of Maryland**.
   - Explore the inherent mechanism in large reasoning models and conduct in-depth research on efficient multimodal reasoning with `NoWait`.
