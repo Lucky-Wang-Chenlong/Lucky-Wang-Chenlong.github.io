@@ -24,9 +24,9 @@ At present, I am collaborating with Prof. [Tianyi Zhou](https://tianyizhou.githu
 I am currently seeking a Ph.D position in Machine Learning for Fall 2026.
 
 My research interests lie in **Machine Learning** and **Large Language Model**, especially on
-- **Reasoning**: reasoning interpretability, MLLM reasoning, reward hack.
-- **Self-evolution**: self-play.
-- **World Model**: simulated world, robotics.
+- **Multi Modality**: Unified Model, MLLM.
+- **Video Generation**: World Model, Video Gen.
+- **Reasoning & Evaluation**: RL, Interpretability, Data-centric.
 
 Here is my [CV](https://drive.google.com/file/d/13tjEFEF5Lehm8jajiyQTGLJJwD3h7v7K/view?usp=drive_link). Please feel free to contact me!
 
