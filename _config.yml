@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Chenlong Wang"
+title                    : "Chenlong Wang\n王臣龙"
 description              : "A final-year undergraduate student at HUST."
 repository               : "Lucky-voyage/chenlong-wang.github.io"
 google_scholar_stats_use_cdn : true
