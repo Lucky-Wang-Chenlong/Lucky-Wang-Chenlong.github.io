@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # About me
 
-I am a third-year undergraduate student in the School of Computer Science and Technology at [HUST](https://english.hust.edu.cn/). I began my research journey while working with Prof. [Yao Wan](http://wanyao.me/) at HUST, and join his undergraduate research team, [ONE Lab](https://oneslab.github.io/).
+My name is Chenlong Wang (王臣龙), a third-year undergraduate student in the School of Computer Science and Technology at [HUST](https://english.hust.edu.cn/). I began my research journey while working with Prof. [Yao Wan](http://wanyao.me/) at HUST, and join his undergraduate research team, [ONE Lab](https://oneslab.github.io/).
 At present, I am collaborating with Prof. [Tianyi Zhou](https://tianyizhou.github.io/) at [UMD](https://umd.edu/) and will be joining the [CCVL Lab at JHU](https://ccvl.jhu.edu/) as an on-site intern, co-supervised by [Yaoyao Liu](https://yaoyaoliu.web.illinois.edu/) and [Jieneng Chen](https://beckschen.github.io/).
 
 I am currently seeking a Ph.D position in Machine Learning for Fall 2026.
