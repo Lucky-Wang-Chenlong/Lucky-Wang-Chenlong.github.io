@@ -21,7 +21,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Chenlong Wang\n 王臣龙"
+  name             : "Chenlong Wang"
   avatar           : "images/android-chrome-512x512.png"
   bio              : "A thousand times over."
   location         : "Wuhan, China"
