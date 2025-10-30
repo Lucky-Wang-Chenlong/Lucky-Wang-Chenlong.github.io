@@ -92,10 +92,11 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhi
 -->
 # 📖 Experience
 - ***2025.09 - Present***, **On-site Research Intern at** ***[CCVL](https://ccvl.jhu.edu/)*** **in** ***[Johns Hopkins University](https://www.jhu.edu/)***.
+  - Explore the powerful prior knowledge inside of `world models`.
 
 - ***2025.04 - Present***, **Remote Research Intern in** ***[University of Maryland](https://umd.edu/)***.
+  - Investigate the unification and inherent misalignment within `unified model`.
   - Explore the inherent mechanism in large reasoning models and conduct in-depth research on efficient multimodal reasoning with `NoWait`.
-  - Evaluate and alleviate the reward hack.
 
 - ***2024.04 - Present***, **Research Intern at** ***[ONE Lab](https://oneslab.github.io/)*** **in** ***[Huazhong University of Science and Technology](https://english.hust.edu.cn/)***.
   - Code generation & interpertability on code knowledge updating task. We propose `CodeSync`, an automated data engine for code knowledge updating.
