@@ -95,7 +95,7 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhi
   - Explore the powerful prior knowledge inside of `world models`.
 
 - ***2025.04 - Present***, **Remote Research Intern in** ***[University of Maryland](https://umd.edu/)***.
-  - Investigate the unification and inherent misalignment within `unified model`.
+  - Investigate the unification and inherent misalignment within `unified models`.
   - Explore the inherent mechanism in large reasoning models and conduct in-depth research on efficient multimodal reasoning with `NoWait`.
 
 - ***2024.04 - Present***, **Research Intern at** ***[ONE Lab](https://oneslab.github.io/)*** **in** ***[Huazhong University of Science and Technology](https://english.hust.edu.cn/)***.
