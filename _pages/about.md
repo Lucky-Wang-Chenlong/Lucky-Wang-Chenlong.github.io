@@ -28,7 +28,7 @@ My research interests lie in **Machine Learning** and **Large Language Model**, 
 - **Video Generation**: World Model, Video Gen.
 - **Reasoning & Evaluation**: RL, Interpretability, Data-centric.
 
-Here is my [CV](https://drive.google.com/file/d/13tjEFEF5Lehm8jajiyQTGLJJwD3h7v7K/view?usp=drive_link). Please feel free to contact me!
+Here is my [CV](https://drive.google.com/file/d/1_jCzKjvowF2Hqxrt3hZ685d-whxR8nja/view?usp=drive_link). Please feel free to contact me!
 
 ---
 
