@@ -81,8 +81,9 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhi
 
 **P.S.** \* indicates equal contribution. † indicates corresponding author. ‡ indicates project leaders.
 
-
 ---
+
+<br>
 
 # 🍀 In Submission
 
@@ -101,11 +102,11 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
 - ***2025.09 - Present***, **On-site Research Intern at** ***[CCVL](https://ccvl.jhu.edu/)*** **in** ***[Johns Hopkins University](https://www.jhu.edu/)***.
   - Explore the powerful prior knowledge inside of `world models`.
 
-- ***2025.04 - Present***, **Remote Research Intern in** ***[University of Maryland](https://umd.edu/)***.
+- ***2025.04 - 2025.10***, **Remote Research Intern in** ***[University of Maryland](https://umd.edu/)***.
   - Investigate the unification and inherent misalignment within `unified models`.
   - Explore the inherent mechanism in large reasoning models and conduct in-depth research on efficient multimodal reasoning with `NoWait`.
 
-- ***2024.04 - Present***, **Research Intern at** ***[ONE Lab](https://oneslab.github.io/)*** **in** ***[Huazhong University of Science and Technology](https://english.hust.edu.cn/)***.
+- ***2024.04 - 2025.10***, **Research Intern at** ***[ONE Lab](https://oneslab.github.io/)*** **in** ***[Huazhong University of Science and Technology](https://english.hust.edu.cn/)***.
   - Code generation & interpertability on code knowledge updating task. We propose `CodeSync`, an automated data engine for code knowledge updating.
   - Research on LLM-based GUI Agents. We propose a dataset `GUI-World` focusing on GUI-oriented capabilities in current MLLMs.
   
