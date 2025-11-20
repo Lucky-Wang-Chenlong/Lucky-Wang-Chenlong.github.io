@@ -82,6 +82,7 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhi
 **P.S.** \* indicates equal contribution. † indicates corresponding author. ‡ indicates project leaders.
 
 
+---
 
 # 🍀 In Submission
 
@@ -93,7 +94,8 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
 
 **P.S.** \* indicates equal contribution. † indicates corresponding author. ‡ indicates project leaders.
 
-
+---
+<br>
 
 # 📖 Experience
 - ***2025.09 - Present***, **On-site Research Intern at** ***[CCVL](https://ccvl.jhu.edu/)*** **in** ***[Johns Hopkins University](https://www.jhu.edu/)***.
