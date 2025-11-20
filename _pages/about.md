@@ -24,9 +24,10 @@ At present, I am collaborating with Prof. [Tianyi Zhou](https://tianyizhou.githu
 I am currently seeking a Ph.D position in Machine Learning for Fall 2026.
 
 My research interests lie in **Machine Learning** and **Large Language Model**, especially on
-- **Multi Modality**: Unified Model, MLLM.
-- **Video Generation**: World Model, Video Gen.
-- **Reasoning & Evaluation**: RL, Interpretability, Data-centric.
+- **World Model**: Video Generation, 3D Vision, Spatial Reasoning, World Model Simulation, Physics
+- **Multi Modality**: Unified Multimodal Model (UMM), Multimodal Large Language Model (MLLM)
+- **Reasoning**: Reasoning Interpretability, MLLM Reasoning, Efficient Reasoning, Code Reasoning
+- **Trustworthy AI**: Mechanical Interpretability, Model Editing
 
 Here is my [CV](https://drive.google.com/file/d/1_jCzKjvowF2Hqxrt3hZ685d-whxR8nja/view?usp=drive_link). Please feel free to contact me!
 
@@ -60,7 +61,7 @@ Here is my [CV](https://drive.google.com/file/d/1_jCzKjvowF2Hqxrt3hZ685d-whxR8nj
 
 [[PDF]](https://arxiv.org/abs/2502.16645) [[Github]](https://github.com/Lucky-Wang-Chenlong/CodeSync)
 
- **Chenlong Wang**\*, Zhaoyang Chu\*, Zhengxiang Cheng\*, Xuyi Yang, Kaiyue Qiu, Yao Wan†, Zhou Zhao†, Xuanhua Shi†, Hai Jin†, Dongping Chen‡
+ **Chenlong Wang**\*, Zhaoyang Chu\*, Zhengxiang Cheng\*, Xuyi Yang, Kaiyue Qiu, Yao Wan†, Zhou Zhao, Xuanhua Shi, Hai Jin, Dongping Chen‡
 
 </div>
 </div>
@@ -72,7 +73,7 @@ Here is my [CV](https://drive.google.com/file/d/1_jCzKjvowF2Hqxrt3hZ685d-whxR8nj
 
 [[PDF]](https://arxiv.org/pdf/2406.10819) [[Github]](https://github.com/Dongping-Chen/GUI-World) [[Website]](https://gui-world.github.io)
 
-Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhigang He, **Chenlong Wang**, Huichi Zhou, Yiqiang Li, Tianshuo Zhou, Yue Yu, Chujie Gao, Qihui Zhang, Yi Gui, Zhen Li, Yao Wan†, Pan Zhou†, Jianfeng Gao†, Lichao Sun†
+Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhigang He, **Chenlong Wang**, Huichi Zhou, Yiqiang Li, Tianshuo Zhou, Yue Yu, Chujie Gao, Qihui Zhang, Yi Gui, Zhen Li, Yao Wan†, Pan Zhou† Jianfeng Gao, Lichao Sun†
 
 </div>
 </div>
@@ -80,16 +81,20 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhi
 
 **P.S.** \* indicates equal contribution. † indicates corresponding author. ‡ indicates project leaders.
 
-<!-- 
----
+
 
 # 🍀 In Submission
 
+[1] **CausalSpatial: A Comprehensive Benchmark for Object-Centric Causal Spatial Reasoning**
+Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin Zhou, Yijun Yang, Alan Yulle, Jieneng Chen†
+
+[2] **Quantifying the Gap between Understanding and Generation within Unified Multimodal Models**
+**Chenlong Wang**\*, Yuhang Chen\*, Zhihan Hu\*, Dongping Chen, Wenhu Chen, Sarah Wiegreffe, Tianyi Zhou†
+
 **P.S.** \* indicates equal contribution. † indicates corresponding author. ‡ indicates project leaders.
 
----
-<br>
--->
+
+
 # 📖 Experience
 - ***2025.09 - Present***, **On-site Research Intern at** ***[CCVL](https://ccvl.jhu.edu/)*** **in** ***[Johns Hopkins University](https://www.jhu.edu/)***.
   - Explore the powerful prior knowledge inside of `world models`.
