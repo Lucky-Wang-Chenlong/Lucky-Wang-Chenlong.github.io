@@ -88,9 +88,11 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhi
 # 🍀 In Submission
 
 [1] **CausalSpatial: A Comprehensive Benchmark for Object-Centric Causal Spatial Reasoning**
+
 Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin Zhou, Yijun Yang, Alan Yulle, Jieneng Chen†
 
 [2] **Quantifying the Gap between Understanding and Generation within Unified Multimodal Models**
+
 **Chenlong Wang**\*, Yuhang Chen\*, Zhihan Hu\*, Dongping Chen, Wenhu Chen, Sarah Wiegreffe, Tianyi Zhou†
 
 **P.S.** \* indicates equal contribution. † indicates corresponding author. ‡ indicates project leaders.
