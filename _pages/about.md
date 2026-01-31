@@ -111,7 +111,7 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
       <li>Explore the powerful prior knowledge inside of <code>world models</code>.</li>
     </ul>
   </div>
-  <div style="width: 30%; max-width: 100px;">
+  <div style="width: 30%; max-width: 200px;">
     <img src="images/affiliation/JHU_logo.png" alt="JHU Logo" style="width: 100%; object-fit: contain;">
   </div>
 </div>
@@ -126,7 +126,7 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
       <li>Explore the inherent mechanism in large reasoning models and conduct in-depth research on efficient multimodal reasoning with <code>NoWait</code>.</li>
     </ul>
   </div>
-  <div style="width: 30%; max-width: 100px;">
+  <div style="width: 30%; max-width: 200px;">
     <img src="images/affiliation/UMD_logo.png" alt="UMD Logo" style="width: 100%; object-fit: contain;">
   </div>
 </div>
@@ -141,7 +141,7 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
       <li>Research on LLM-based GUI Agents. We propose a dataset <code>GUI-World</code> focusing on GUI-oriented capabilities in current MLLMs.</li>
     </ul>
   </div>
-  <div style="width: 30%; max-width: 100px;">
+  <div style="width: 30%; max-width: 200px;">
     <img src="images/affiliation/HUST_logo.png" alt="HUST Logo" style="width: 100%; object-fit: contain;">
   </div>
 </div>
