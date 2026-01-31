@@ -106,14 +106,14 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
   <div style="flex: 1; margin-right: 20px;">
     <div style="font-size: 1.1em; font-weight: bold;">Research Intern</div>
     <div style="font-style: italic; color: #666;">2025.09 - Present</div>
-    <div><a href="https://ccvl.jhu.edu/">CCVL</a>, <a href="https://www.jhu.edu/">Johns Hopkins University</a></div>
-    <div>Supervised by <a href="https://beckschen.github.io/">Jieneng Chen</a></div>
+    <div><a href="https://ccvl.jhu.edu/">CCVL</a>, Johns Hopkins University,</div>
+    <div>Supervised by <a href="https://beckschen.github.io/">Jieneng Chen.</a></div>
     <ul style="margin-top: 5px;">
       <li>Explore the powerful prior knowledge inside of <code>world models</code>.</li>
     </ul>
   </div>
-  <div style="width: 30%; max-width: 125px; display: flex; justify-content: center; align-items: center;">
-    <img src="images/affiliation/jhu_logo.png" alt="JHU Logo" style="width: 100%; object-fit: contain;">
+  <div style="width: 30%; max-width: 200px; display: flex; justify-content: center; align-items: center;">
+    <img src="images/affiliation/jhu_logo.png" alt="JHU Logo" style="width: 70%; object-fit: contain;">
   </div>
 </div>
 
@@ -121,15 +121,15 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
   <div style="flex: 1; margin-right: 20px;">
     <div style="font-size: 1.1em; font-weight: bold;">Remote Research Intern</div>
     <div style="font-style: italic; color: #666;">2025.04 - 2025.10</div>
-    <div><a href="https://umd.edu/">University of Maryland</a></div>
-    <div>Supervised by <a href="https://tianyizhou.github.io/">Tianyi Zhou</a></div>
+    <div>University of Maryland,</div>
+    <div>Supervised by <a href="https://tianyizhou.github.io/">Tianyi Zhou.</a></div>
     <ul style="margin-top: 5px;">
       <li>Investigate the unification and inherent misalignment within <code>unified models</code>.</li>
       <li>Explore the inherent mechanism in large reasoning models and conduct in-depth research on efficient multimodal reasoning with <code>NoWait</code>.</li>
     </ul>
   </div>
-  <div style="width: 30%; max-width: 170px; display: flex; justify-content: center; align-items: center;">
-    <img src="images/affiliation/UMD_logo.png" alt="UMD Logo" style="width: 100%; object-fit: contain;">
+  <div style="width: 30%; max-width: 200px; display: flex; justify-content: center; align-items: center;">
+    <img src="images/affiliation/UMD_logo.png" alt="UMD Logo" style="width: 80%; object-fit: contain;">
   </div>
 </div>
 
@@ -137,8 +137,8 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
   <div style="flex: 1; margin-right: 20px;">
     <div style="font-size: 1.1em; font-weight: bold;">B.Eng. in Computer Science and Technology</div>
     <div style="font-style: italic; color: #666;">2022.09 - 2026.06 (expected)</div>
-    <div><a href="https://oneslab.github.io/">ONE Lab</a>, <a href="https://english.hust.edu.cn/">Huazhong University of Science and Technology</a></div>
-    <div>Supervised by <a href="http://wanyao.me/">Yao Wan</a></div>
+    <div><a href="https://oneslab.github.io/">ONE Lab</a>, Huazhong University of Science and Technology,</div>
+    <div>Supervised by <a href="http://wanyao.me/">Yao Wan.</a></div>
     <ul style="margin-top: 5px;">
       <li>Code generation & interpretability on code knowledge updating task. We propose <code>CodeSync</code>, an automated data engine for code knowledge updating.</li>
       <li>Research on LLM-based GUI Agents. We propose a dataset <code>GUI-World</code> focusing on GUI-oriented capabilities in current MLLMs.</li>
