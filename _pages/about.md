@@ -117,6 +117,8 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
   </div>
 </div>
 
+---
+
 <div style="display: flex; align-items: center; margin-bottom: 25px;">
   <div style="flex: 1; margin-right: 20px;">
     <div style="font-size: 1.1em; font-weight: bold;">Remote Research Intern</div>
@@ -132,6 +134,8 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
     <img src="images/affiliation/UMD_logo.png" alt="UMD Logo" style="width: 80%; object-fit: contain;">
   </div>
 </div>
+
+---
 
 <div style="display: flex; align-items: center; margin-bottom: 25px;">
   <div style="flex: 1; margin-right: 20px;">
