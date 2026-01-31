@@ -19,7 +19,7 @@ redirect_from:
 # About me
 
 My name is Chenlong Wang (王臣龙), a third-year undergraduate student in the School of Computer Science and Technology at [HUST](https://english.hust.edu.cn/). I began my research journey while working with Prof. [Yao Wan](http://wanyao.me/) at HUST, and join his undergraduate research team, [ONE Lab](https://oneslab.github.io/).
-After that, I have collaborated with Prof. [Tianyi Zhou](https://tianyizhou.github.io/) at [UMD](https://umd.edu/). At present, I have joined the [CCVL Lab at JHU](https://ccvl.jhu.edu/) as an on-site intern, co-supervised by [Yaoyao Liu](https://yaoyaoliu.web.illinois.edu/) and [Jieneng Chen](https://beckschen.github.io/).
+After that, I have collaborated with Prof. [Tianyi Zhou](https://tianyizhou.github.io/) at [UMD](https://umd.edu/). At present, I have joined the [CCVL Lab at JHU](https://ccvl.jhu.edu/) as an on-site intern, supervised by [Jieneng Chen](https://beckschen.github.io/).
 
 I am currently seeking a Ph.D position in Machine Learning for Fall 2026.
 
@@ -107,19 +107,7 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
     <div style="font-size: 1.1em; font-weight: bold;">Research Intern</div>
     <div style="font-style: italic; color: #666;">2025.09 - Present</div>
     <div><a href="https://ccvl.jhu.edu/">CCVL</a>, <a href="https://www.jhu.edu/">Johns Hopkins University</a></div>
-    <ul style="margin-top: 5px;">
-      <li>Explore the powerful prior knowledge inside of <code>world models</code>.</li>
-    </ul>
-  </div>
-  <div style="width: 30%; max-width: 125px;">
-    <img src="images/affiliation/JHU_logo.png" alt="JHU Logo" style="width: 100%; object-fit: contain;">
-  </div>
-</div>
-<div style="display: flex; align-items: center; margin-bottom: 25px;">
-  <div style="flex: 1; margin-right: 20px;">
-    <div style="font-size: 1.1em; font-weight: bold;">Research Intern</div>
-    <div style="font-style: italic; color: #666;">2025.09 - Present</div>
-    <div><a href="https://ccvl.jhu.edu/">CCVL</a>, <a href="https://www.jhu.edu/">Johns Hopkins University</a></div>
+    <div>Supervised by <a href="https://beckschen.github.io/">Jieneng Chen</a></div>
     <ul style="margin-top: 5px;">
       <li>Explore the powerful prior knowledge inside of <code>world models</code>.</li>
     </ul>
@@ -134,12 +122,13 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
     <div style="font-size: 1.1em; font-weight: bold;">Remote Research Intern</div>
     <div style="font-style: italic; color: #666;">2025.04 - 2025.10</div>
     <div><a href="https://umd.edu/">University of Maryland</a></div>
+    <div>Supervised by <a href="https://tianyizhou.github.io/">Tianyi Zhou</a></div>
     <ul style="margin-top: 5px;">
       <li>Investigate the unification and inherent misalignment within <code>unified models</code>.</li>
       <li>Explore the inherent mechanism in large reasoning models and conduct in-depth research on efficient multimodal reasoning with <code>NoWait</code>.</li>
     </ul>
   </div>
-  <div style="width: 30%; max-width: 170px;">
+  <div style="width: 30%; max-width: 170px; display: flex; justify-content: center; align-items: center;">
     <img src="images/affiliation/UMD_logo.png" alt="UMD Logo" style="width: 100%; object-fit: contain;">
   </div>
 </div>
@@ -149,12 +138,13 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
     <div style="font-size: 1.1em; font-weight: bold;">B.Eng. in Computer Science and Technology</div>
     <div style="font-style: italic; color: #666;">2022.09 - 2026.06 (expected)</div>
     <div><a href="https://oneslab.github.io/">ONE Lab</a>, <a href="https://english.hust.edu.cn/">Huazhong University of Science and Technology</a></div>
+    <div>Supervised by <a href="http://wanyao.me/">Yao Wan</a></div>
     <ul style="margin-top: 5px;">
       <li>Code generation & interpretability on code knowledge updating task. We propose <code>CodeSync</code>, an automated data engine for code knowledge updating.</li>
       <li>Research on LLM-based GUI Agents. We propose a dataset <code>GUI-World</code> focusing on GUI-oriented capabilities in current MLLMs.</li>
     </ul>
   </div>
-  <div style="width: 30%; max-width: 200px;">
+  <div style="width: 30%; max-width: 200px; display: flex; justify-content: center; align-items: center;">
     <img src="images/affiliation/HUST_logo.png" alt="HUST Logo" style="width: 100%; object-fit: contain;">
   </div>
 </div>
