@@ -47,7 +47,7 @@ Here is my [CV](https://drive.google.com/file/d/1_jCzKjvowF2Hqxrt3hZ685d-whxR8nj
 
 **Wait, We Don’t Need to “Wait”! Removing Thinking Tokens Improves Reasoning Efficiency** 
 
-[[PDF]](https://arxiv.org/abs/2506.08343) 
+[[Arxiv]](https://arxiv.org/abs/2506.08343) 
 
 **Chenlong Wang**, Yuanning Feng, Dongping Chen, Zhaoyang Chu, Ranjay Krishna, Tianyi Zhou†
 
@@ -59,7 +59,7 @@ Here is my [CV](https://drive.google.com/file/d/1_jCzKjvowF2Hqxrt3hZ685d-whxR8nj
 
 **CodeSync: Synchronizing Large Language Models with Dynamic Code Evolution at Scale** 
 
-[[PDF]](https://arxiv.org/abs/2502.16645) [[Github]](https://github.com/Lucky-Wang-Chenlong/CodeSync)
+[[Arxiv]](https://arxiv.org/abs/2502.16645) [[Github]](https://github.com/Lucky-Wang-Chenlong/CodeSync)
 
  **Chenlong Wang**\*, Zhaoyang Chu\*, Zhengxiang Cheng\*, Xuyi Yang, Kaiyue Qiu, Yao Wan†, Zhou Zhao, Xuanhua Shi, Hai Jin, Dongping Chen‡
 
@@ -71,7 +71,7 @@ Here is my [CV](https://drive.google.com/file/d/1_jCzKjvowF2Hqxrt3hZ685d-whxR8nj
 
 **GUI-World: A Dataset for GUI-oriented Multimodal LLM-based Agents** 
 
-[[PDF]](https://arxiv.org/pdf/2406.10819) [[Github]](https://github.com/Dongping-Chen/GUI-World) [[Website]](https://gui-world.github.io)
+[[Arxiv]](https://arxiv.org/pdf/2406.10819) [[Github]](https://github.com/Dongping-Chen/GUI-World) [[Website]](https://gui-world.github.io)
 
 Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhigang He, **Chenlong Wang**, Huichi Zhou, Yiqiang Li, Tianshuo Zhou, Yue Yu, Chujie Gao, Qihui Zhang, Yi Gui, Zhen Li, Yao Wan†, Pan Zhou† Jianfeng Gao, Lichao Sun†
 
@@ -87,7 +87,7 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhi
 
 # 🍀 In Submission
 
-[1] **CausalSpatial: A Comprehensive Benchmark for Object-Centric Causal Spatial Reasoning**
+[1] **CausalSpatial: A Comprehensive Benchmark for Object-Centric Causal Spatial Reasoning** [[Arxiv](https://arxiv.org/abs/2601.13304)]
 
 Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin Zhou, Yijun Yang, Alan Yuille, Jieneng Chen†
 
