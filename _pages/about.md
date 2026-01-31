@@ -113,7 +113,7 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
     </ul>
   </div>
   <div style="width: 30%; max-width: 200px; display: flex; justify-content: center; align-items: center;">
-    <img src="images/affiliation/jhu_logo.png" alt="JHU Logo" style="width: 70%; object-fit: contain;">
+    <img src="images/affiliation/JHU_logo.png" alt="JHU Logo" style="width: 70%; object-fit: contain;">
   </div>
 </div>
 
