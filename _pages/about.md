@@ -112,7 +112,7 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
     </ul>
   </div>
   <div style="width: 15%; max-width: 100px;">
-    <img src="images/jhu_logo.png" alt="JHU Logo" style="width: 100%; object-fit: contain;">
+    <img src="images/affiliation/JHU_logo.png" alt="JHU Logo" style="width: 100%; object-fit: contain;">
   </div>
 </div>
 
@@ -127,7 +127,7 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
     </ul>
   </div>
   <div style="width: 15%; max-width: 100px;">
-    <img src="images/umd_logo.png" alt="UMD Logo" style="width: 100%; object-fit: contain;">
+    <img src="images/affiliation/UMD_logo.png" alt="UMD Logo" style="width: 100%; object-fit: contain;">
   </div>
 </div>
 
@@ -142,6 +142,6 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
     </ul>
   </div>
   <div style="width: 15%; max-width: 100px;">
-    <img src="images/hust_logo.png" alt="HUST Logo" style="width: 100%; object-fit: contain;">
+    <img src="images/affiliation/HUST_logo.png" alt="HUST Logo" style="width: 100%; object-fit: contain;">
   </div>
 </div>
