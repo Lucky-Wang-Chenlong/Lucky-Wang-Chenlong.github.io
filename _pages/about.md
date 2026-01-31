@@ -111,7 +111,7 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
       <li>Explore the powerful prior knowledge inside of <code>world models</code>.</li>
     </ul>
   </div>
-  <div style="width: 30%; max-width: 200px;">
+  <div style="width: 15%; max-width: 150px;">
     <img src="images/affiliation/JHU_logo.png" alt="JHU Logo" style="width: 100%; object-fit: contain;">
   </div>
 </div>
