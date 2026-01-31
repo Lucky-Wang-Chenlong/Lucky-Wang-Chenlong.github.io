@@ -111,8 +111,21 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
       <li>Explore the powerful prior knowledge inside of <code>world models</code>.</li>
     </ul>
   </div>
-  <div style="width: 15%; max-width: 150px;">
+  <div style="width: 30%; max-width: 125px;">
     <img src="images/affiliation/JHU_logo.png" alt="JHU Logo" style="width: 100%; object-fit: contain;">
+  </div>
+</div>
+<div style="display: flex; align-items: center; margin-bottom: 25px;">
+  <div style="flex: 1; margin-right: 20px;">
+    <div style="font-size: 1.1em; font-weight: bold;">Research Intern</div>
+    <div style="font-style: italic; color: #666;">2025.09 - Present</div>
+    <div><a href="https://ccvl.jhu.edu/">CCVL</a>, <a href="https://www.jhu.edu/">Johns Hopkins University</a></div>
+    <ul style="margin-top: 5px;">
+      <li>Explore the powerful prior knowledge inside of <code>world models</code>.</li>
+    </ul>
+  </div>
+  <div style="width: 30%; max-width: 125px; display: flex; justify-content: center; align-items: center;">
+    <img src="images/jhu_logo.png" alt="JHU Logo" style="width: 100%; object-fit: contain;">
   </div>
 </div>
 
@@ -126,7 +139,7 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
       <li>Explore the inherent mechanism in large reasoning models and conduct in-depth research on efficient multimodal reasoning with <code>NoWait</code>.</li>
     </ul>
   </div>
-  <div style="width: 25%; max-width: 170px;">
+  <div style="width: 30%; max-width: 170px;">
     <img src="images/affiliation/UMD_logo.png" alt="UMD Logo" style="width: 100%; object-fit: contain;">
   </div>
 </div>
