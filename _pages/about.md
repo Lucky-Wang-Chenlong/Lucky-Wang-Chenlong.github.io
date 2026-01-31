@@ -101,16 +101,47 @@ Wenxin Ma\*, **Chenlong Wang**\*, Ruishegn Yuan\*, Hao Chen, Nanru Dai, S Kevin 
 <br>
 
 # 📖 Experience
-- ***2025.09 - Present***, **On-site Research Intern at** ***[CCVL](https://ccvl.jhu.edu/)*** **in** ***[Johns Hopkins University](https://www.jhu.edu/)***.
-  - Explore the powerful prior knowledge inside of `world models`.
 
-- ***2025.04 - 2025.10***, **Remote Research Intern in** ***[University of Maryland](https://umd.edu/)***.
-  - Investigate the unification and inherent misalignment within `unified models`.
-  - Explore the inherent mechanism in large reasoning models and conduct in-depth research on efficient multimodal reasoning with `NoWait`.
+<div style="display: flex; align-items: center; margin-bottom: 25px;">
+  <div style="flex: 1; margin-right: 20px;">
+    <div style="font-size: 1.1em; font-weight: bold;">Research Intern</div>
+    <div style="font-style: italic; color: #666;">2025.09 - Present</div>
+    <div><a href="https://ccvl.jhu.edu/">CCVL</a>, <a href="https://www.jhu.edu/">Johns Hopkins University</a></div>
+    <ul style="margin-top: 5px;">
+      <li>Explore the powerful prior knowledge inside of <code>world models</code>.</li>
+    </ul>
+  </div>
+  <div style="width: 15%; max-width: 100px;">
+    <img src="images/jhu_logo.png" alt="JHU Logo" style="width: 100%; object-fit: contain;">
+  </div>
+</div>
 
-- ***2024.04 - 2025.10***, **Research Intern at** ***[ONE Lab](https://oneslab.github.io/)*** **in** ***[Huazhong University of Science and Technology](https://english.hust.edu.cn/)***.
-  - Code generation & interpertability on code knowledge updating task. We propose `CodeSync`, an automated data engine for code knowledge updating.
-  - Research on LLM-based GUI Agents. We propose a dataset `GUI-World` focusing on GUI-oriented capabilities in current MLLMs.
-  
-- ***2022.09 - 2026.06 (expected)***, BEng., Huazhong University of Science and Technology.
+<div style="display: flex; align-items: center; margin-bottom: 25px;">
+  <div style="flex: 1; margin-right: 20px;">
+    <div style="font-size: 1.1em; font-weight: bold;">Remote Research Intern</div>
+    <div style="font-style: italic; color: #666;">2025.04 - 2025.10</div>
+    <div><a href="https://umd.edu/">University of Maryland</a></div>
+    <ul style="margin-top: 5px;">
+      <li>Investigate the unification and inherent misalignment within <code>unified models</code>.</li>
+      <li>Explore the inherent mechanism in large reasoning models and conduct in-depth research on efficient multimodal reasoning with <code>NoWait</code>.</li>
+    </ul>
+  </div>
+  <div style="width: 15%; max-width: 100px;">
+    <img src="images/umd_logo.png" alt="UMD Logo" style="width: 100%; object-fit: contain;">
+  </div>
+</div>
 
+<div style="display: flex; align-items: center; margin-bottom: 25px;">
+  <div style="flex: 1; margin-right: 20px;">
+    <div style="font-size: 1.1em; font-weight: bold;">B.Eng. in Computer Science and Technology</div>
+    <div style="font-style: italic; color: #666;">2022.09 - 2026.06 (expected)</div>
+    <div><a href="https://oneslab.github.io/">ONE Lab</a>, <a href="https://english.hust.edu.cn/">Huazhong University of Science and Technology</a></div>
+    <ul style="margin-top: 5px;">
+      <li>Code generation & interpretability on code knowledge updating task. We propose <code>CodeSync</code>, an automated data engine for code knowledge updating.</li>
+      <li>Research on LLM-based GUI Agents. We propose a dataset <code>GUI-World</code> focusing on GUI-oriented capabilities in current MLLMs.</li>
+    </ul>
+  </div>
+  <div style="width: 15%; max-width: 100px;">
+    <img src="images/hust_logo.png" alt="HUST Logo" style="width: 100%; object-fit: contain;">
+  </div>
+</div>
