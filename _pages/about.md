@@ -24,8 +24,8 @@ After that, I have collaborated with Prof. [Tianyi Zhou](https://tianyizhou.gith
 I am currently seeking a Ph.D position in Machine Learning for Fall 2026.
 
 My research interests lie in **Multimodal Intelligence**, especially on
-- **World Model**: Video Generation, 3D Vision, Spatial Reasoning, World Model Simulation, Physics
-- **Multi Modality**: Unified Multimodal Model (UMM), Multimodal Large Language Model (MLLM)
+- **World Model**: Video Generation, Spatial Reasoning
+- **Multi Modality**: Unified Multimodal Model, Multimodal Large Language Model
 - **Reasoning**: Reasoning Interpretability, MLLM Reasoning, Efficient Reasoning, Code Reasoning
 - **Trustworthy AI**: Mechanical Interpretability, Model Editing
 
