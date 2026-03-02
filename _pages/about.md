@@ -42,6 +42,18 @@ Here is my [CV](https://drive.google.com/file/d/1_jCzKjvowF2Hqxrt3hZ685d-whxR8nj
 <br>
 
 # 📝 Publications 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026 Findings</div><img src='images/poster/gapeval.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Quantifying the Gap between Understanding and Generation within Unified Multimodal Models**
+
+[[Arxiv](https://arxiv.org/abs/2602.02140)]
+
+**Chenlong Wang**\*, Yuhang Chen\*, Zhihan Hu\*, Dongping Chen, Wenhu Chen, Sarah Wiegreffe, Tianyi Zhou†
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2025 Findings</div><img src='images/poster/nowait.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -89,13 +101,10 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhi
 
 [1] **CausalSpatial: A Comprehensive Benchmark for Object-Centric Causal Spatial Reasoning** [[Arxiv](https://arxiv.org/abs/2601.13304)]
 
+ICLR 2026 Workshop on World Models
+
 Wenxin Ma\*, **Chenlong Wang**\*, Ruisheng Yuan\*, Hao Chen, Nanru Dai, S Kevin Zhou, Yijun Yang, Alan Yuille, Jieneng Chen†
 
-[2] **Quantifying the Gap between Understanding and Generation within Unified Multimodal Models** [[Arxiv](https://arxiv.org/abs/2602.02140)]
-
-**Chenlong Wang**\*, Yuhang Chen\*, Zhihan Hu\*, Dongping Chen, Wenhu Chen, Sarah Wiegreffe, Tianyi Zhou†
-
-(Code and data will be released in Late February.)
 
 **P.S.** \* indicates equal contribution. † indicates corresponding author. ‡ indicates project leaders.
 
