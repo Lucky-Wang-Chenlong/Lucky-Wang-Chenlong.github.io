@@ -99,12 +99,17 @@ Dongping Chen\*, Yue Huang\*, Siyuan Wu, Jingyu Tang, Liuyi Chen, Yilin Bai, Zhi
 
 # 🍀 In Submission
 
-[1] **CausalSpatial: A Comprehensive Benchmark for Object-Centric Causal Spatial Reasoning** [[Arxiv](https://arxiv.org/abs/2601.13304)]
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/poster/causalspatial.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-ICLR 2026 Workshop on World Models
+**CausalSpatial: A Comprehensive Benchmark for Object-Centric Causal Spatial Reasoning**
+
+[[Arxiv](https://arxiv.org/abs/2601.13304)]
 
 Wenxin Ma\*, **Chenlong Wang**\*, Ruisheng Yuan\*, Hao Chen, Nanru Dai, S Kevin Zhou, Yijun Yang, Alan Yuille, Jieneng Chen†
 
+</div>
+</div>
 
 **P.S.** \* indicates equal contribution. † indicates corresponding author. ‡ indicates project leaders.
 
