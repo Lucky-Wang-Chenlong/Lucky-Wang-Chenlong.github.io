@@ -397,7 +397,7 @@ body.theme-luka .pub-cover {
 body.theme-luka .pub-cover img {
   display: block;
   width: 100%;
-  height: 78px;
+  height: 150px;
   border-radius: 8px;
   object-fit: cover;
 }
