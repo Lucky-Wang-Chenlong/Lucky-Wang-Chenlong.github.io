@@ -244,6 +244,15 @@ body.theme-luka .visitor-card-body {
   line-height: 1.6;
 }
 
+body.theme-luka .visitor-card img {
+  display: block;
+  width: 208px;
+  height: 140px;
+  margin: 10px auto 0;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 body.theme-luka .content {
   flex: 1;
   min-width: 0;
@@ -367,6 +376,30 @@ body.theme-luka .publications ol.bibliography li {
   margin-bottom: 14px;
   padding: 15px 0 15px 16px;
   border-left: 3px solid var(--luka-accent);
+}
+
+body.theme-luka .pub-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+body.theme-luka .pub-cover {
+  width: 120px;
+  flex: 0 0 120px;
+}
+
+body.theme-luka .pub-cover img {
+  display: block;
+  width: 100%;
+  height: 78px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+body.theme-luka .pub-content {
+  flex: 1;
+  min-width: 0;
 }
 
 body.theme-luka .pub-content .title {
@@ -505,6 +538,19 @@ body.theme-luka strong {
   body.theme-luka .visitor-card {
     width: 100%;
     max-width: 280px;
+  }
+
+  body.theme-luka .pub-row {
+    gap: 10px;
+  }
+
+  body.theme-luka .pub-cover {
+    width: 96px;
+    flex-basis: 96px;
+  }
+
+  body.theme-luka .pub-cover img {
+    height: 64px;
   }
 }
 
