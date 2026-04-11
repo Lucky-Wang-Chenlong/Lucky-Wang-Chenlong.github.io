@@ -244,10 +244,15 @@ body.theme-luka .visitor-card-body {
   line-height: 1.6;
 }
 
-body.theme-luka .visitor-card img {
+body.theme-luka .visitor-card img,
+body.theme-luka .visitor-card .visitor-map {
   display: block;
   width: 208px;
+  min-width: 208px;
+  max-width: 208px;
   height: 140px;
+  min-height: 140px;
+  max-height: 140px;
   margin: 10px auto 0;
   border-radius: 10px;
   object-fit: cover;
