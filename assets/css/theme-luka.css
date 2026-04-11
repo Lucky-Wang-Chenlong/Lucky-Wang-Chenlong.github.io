@@ -390,16 +390,17 @@ body.theme-luka .pub-row {
 }
 
 body.theme-luka .pub-cover {
-  width: 260px;
-  flex: 0 0 200px;
+  width: 180px;
+  flex: 0 0 180px;
 }
 
 body.theme-luka .pub-cover img {
   display: block;
   width: 100%;
-  height: 180px;
+  height: 92px;
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
 
 body.theme-luka .pub-content {
@@ -550,12 +551,12 @@ body.theme-luka strong {
   }
 
   body.theme-luka .pub-cover {
-    width: 96px;
-    flex-basis: 96px;
+    width: 120px;
+    flex-basis: 120px;
   }
 
   body.theme-luka .pub-cover img {
-    height: 64px;
+    height: 62px;
   }
 }
 
