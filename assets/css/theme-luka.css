@@ -390,14 +390,14 @@ body.theme-luka .pub-row {
 }
 
 body.theme-luka .pub-cover {
-  width: 200px;
+  width: 260px;
   flex: 0 0 200px;
 }
 
 body.theme-luka .pub-cover img {
   display: block;
   width: 100%;
-  height: 150px;
+  height: 180px;
   border-radius: 8px;
   object-fit: cover;
 }
