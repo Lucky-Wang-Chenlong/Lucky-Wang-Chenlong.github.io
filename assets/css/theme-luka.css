@@ -337,8 +337,8 @@ body.theme-luka .experience-item {
 }
 
 body.theme-luka .institution-logo {
-  width: 52px;
-  height: 52px;
+  width: 80px;
+  height: 80px;
   flex-shrink: 0;
   object-fit: contain;
   object-position: center;
