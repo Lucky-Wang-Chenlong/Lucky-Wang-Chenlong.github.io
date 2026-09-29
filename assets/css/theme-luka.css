@@ -7,6 +7,23 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Hand-drawn birds; each hotspot sits on the tip of that bird's beak. */
+:root {
+  --bird-cursor: url("../img/cursor/cockatoo.png") 4 13;
+}
+
+:root[data-cursor="cockatiel"] {
+  --bird-cursor: url("../img/cursor/cockatiel.png") 5 12;
+}
+
+:root[data-cursor="toucan"] {
+  --bird-cursor: url("../img/cursor/toucan.png") 2 9;
+}
+
+:root[data-cursor="lovebird"] {
+  --bird-cursor: url("../img/cursor/lovebird.png") 5 10;
+}
+
 body {
   margin: 0;
 }
@@ -218,6 +235,95 @@ body.theme-luka .social-icons a:hover {
   background: var(--luka-accent);
   color: #fff !important;
   transform: translateY(-2px);
+}
+
+body.theme-luka .cursor-picker {
+  width: 224px;
+  margin: 26px auto 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+body.theme-luka .cursor-picker legend {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0;
+  color: var(--luka-secondary);
+  font-size: 12px;
+}
+
+body.theme-luka .cursor-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+body.theme-luka .cursor-option {
+  position: relative;
+  cursor: pointer;
+}
+
+body.theme-luka .cursor-option input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+body.theme-luka .cursor-swatch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border: 1px solid var(--luka-border);
+  border-radius: 10px;
+  background: var(--luka-social-bg);
+}
+
+body.theme-luka .cursor-swatch img {
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+}
+
+body.theme-luka .cursor-option:hover .cursor-swatch {
+  border-color: var(--luka-accent);
+}
+
+body.theme-luka .cursor-option input:checked + .cursor-swatch {
+  border-color: var(--luka-accent);
+  box-shadow: 0 0 0 1px var(--luka-accent);
+  background: var(--luka-border);
+}
+
+body.theme-luka .cursor-option input:focus-visible + .cursor-swatch {
+  outline: 2px solid var(--luka-accent);
+  outline-offset: 4px;
+}
+
+body.theme-luka .cursor-name {
+  display: block;
+  margin-top: 8px;
+  color: var(--luka-secondary);
+  font-size: 11px;
+}
+
+@media (any-hover: hover) and (any-pointer: fine) {
+  html,
+  body.theme-luka {
+    cursor: var(--bird-cursor), auto;
+  }
+
+  body.theme-luka a,
+  body.theme-luka button.theme-toggle,
+  body.theme-luka .cursor-option,
+  body.theme-luka .cursor-option input {
+    cursor: var(--bird-cursor), pointer;
+  }
 }
 
 body.theme-luka .visitor-card {
