@@ -86,6 +86,7 @@ body.theme-luka *::after {
 }
 
 body.theme-luka {
+  padding-left: 72px;
   background: var(--luka-bg);
   color: var(--luka-text);
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -104,6 +105,7 @@ body.theme-luka a:hover {
 }
 
 body.theme-luka .top-nav {
+  padding-left: 72px;
   position: fixed;
   top: 0;
   left: 0;
@@ -164,7 +166,7 @@ body.theme-luka .sidebar {
   flex-shrink: 0;
   position: fixed;
   top: 60px;
-  left: calc(50% - 560px);
+  left: calc(50% - 524px);
   height: calc(100vh - 60px);
   overflow-y: auto;
   text-align: center;
@@ -238,25 +240,36 @@ body.theme-luka .social-icons a:hover {
 }
 
 body.theme-luka .cursor-picker {
-  width: 224px;
-  margin: 26px auto 0;
-  padding: 0;
+  position: fixed;
+  left: 8px;
+  top: calc(50% + 30px);
+  transform: translateY(-50%);
+  z-index: 1001;
+  width: 56px;
+  max-height: calc(100dvh - 80px);
+  overflow-y: auto;
+  margin: 0;
+  padding: 4px;
   border: 0;
   min-width: 0;
 }
 
-body.theme-luka .cursor-picker legend {
-  width: 100%;
-  margin-bottom: 10px;
+body.theme-luka .cursor-picker legend,
+body.theme-luka .cursor-name {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  margin: 0;
   padding: 0;
-  color: var(--luka-secondary);
-  font-size: 12px;
 }
 
 body.theme-luka .cursor-options {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
+  grid-template-columns: 1fr;
+  gap: 12px;
 }
 
 body.theme-luka .cursor-option {
@@ -278,7 +291,7 @@ body.theme-luka .cursor-swatch {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
+  height: 48px;
   border: 1px solid var(--luka-border);
   border-radius: 10px;
   background: var(--luka-social-bg);
@@ -302,28 +315,41 @@ body.theme-luka .cursor-option input:checked + .cursor-swatch {
 
 body.theme-luka .cursor-option input:focus-visible + .cursor-swatch {
   outline: 2px solid var(--luka-accent);
-  outline-offset: 4px;
+  outline-offset: 2px;
 }
 
-body.theme-luka .cursor-name {
-  display: block;
-  margin-top: 8px;
-  color: var(--luka-secondary);
-  font-size: 11px;
+/* Use a visible sprite as the pointer; it never intercepts clicks. */
+body.theme-luka .bird-pointer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  z-index: 2147483647;
+  pointer-events: none;
+  user-select: none;
+  image-rendering: pixelated;
 }
 
-@media (any-hover: hover) and (any-pointer: fine) {
-  html,
-  body.theme-luka {
-    cursor: var(--bird-cursor), auto;
-  }
+html,
+body.theme-luka {
+  cursor: var(--bird-cursor), auto;
+}
 
-  body.theme-luka a,
-  body.theme-luka button.theme-toggle,
-  body.theme-luka .cursor-option,
-  body.theme-luka .cursor-option input {
-    cursor: var(--bird-cursor), pointer;
-  }
+body.theme-luka a,
+body.theme-luka button.theme-toggle,
+body.theme-luka .cursor-option,
+body.theme-luka .cursor-option input {
+  cursor: var(--bird-cursor), pointer;
+}
+
+/* Hide the OS cursor only after the sprite has loaded and a mouse has moved. */
+html[data-bird-pointer="visible"],
+html[data-bird-pointer="visible"] body.theme-luka,
+html[data-bird-pointer="visible"] body.theme-luka *,
+html[data-bird-pointer="visible"] body.theme-luka *::before,
+html[data-bird-pointer="visible"] body.theme-luka *::after {
+  cursor: none !important;
 }
 
 body.theme-luka .visitor-card {
@@ -593,7 +619,7 @@ body.theme-luka strong {
   color: var(--luka-text);
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1192px) {
   body.theme-luka .nav-container {
     padding: 0 20px;
   }
@@ -653,6 +679,13 @@ body.theme-luka strong {
   body.theme-luka .visitor-card {
     width: 100%;
     max-width: 280px;
+  }
+
+  body.theme-luka .visitor-card img,
+  body.theme-luka .visitor-card .visitor-map {
+    width: 100%;
+    min-width: 0;
+    max-width: 208px;
   }
 
   body.theme-luka .pub-row {

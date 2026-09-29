@@ -17,8 +17,8 @@
   <script src="https://kit.fontawesome.com/a860a211d3.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="assets/css/font_sans_serif.css">
-  <link rel="stylesheet" href="assets/css/theme-luka.css">
-  <script src="assets/js/cursor-picker.js" defer></script>
+  <link rel="stylesheet" href="assets/css/theme-luka.css?v=bird-cursor-2">
+  <script src="assets/js/cursor-picker.js?v=bird-cursor-2" defer></script>
 </head>
 <body class="theme-luka">
   <nav class="top-nav">
@@ -33,6 +33,29 @@
       </div>
     </div>
   </nav>
+
+  <fieldset class="cursor-picker" hidden>
+    <legend>Pick your cursor</legend>
+    <div class="cursor-options">
+      <label class="cursor-option" title="Cockatoo · 葵花鹦鹉">
+        <input type="radio" name="bird-cursor" value="cockatoo" aria-label="Cockatoo · 葵花鹦鹉" data-name="Cockatoo" checked>
+        <span class="cursor-swatch"><img src="assets/img/cursor/cockatoo.png" width="32" height="32" alt=""></span>
+      </label>
+      <label class="cursor-option" title="Lutino cockatiel · 黄化玄凤">
+        <input type="radio" name="bird-cursor" value="cockatiel" aria-label="Lutino cockatiel · 黄化玄凤" data-name="Lutino cockatiel">
+        <span class="cursor-swatch"><img src="assets/img/cursor/cockatiel.png" width="32" height="32" alt=""></span>
+      </label>
+      <label class="cursor-option" title="Toucan · 巨嘴鸟">
+        <input type="radio" name="bird-cursor" value="toucan" aria-label="Toucan · 巨嘴鸟" data-name="Toucan">
+        <span class="cursor-swatch"><img src="assets/img/cursor/toucan.png" width="32" height="32" alt=""></span>
+      </label>
+      <label class="cursor-option" title="Lovebird · 牡丹鹦鹉">
+        <input type="radio" name="bird-cursor" value="lovebird" aria-label="Lovebird · 牡丹鹦鹉" data-name="Lovebird">
+        <span class="cursor-swatch"><img src="assets/img/cursor/lovebird.png" width="32" height="32" alt=""></span>
+      </label>
+    </div>
+    <output class="cursor-name" id="cursorName" aria-live="polite">Cockatoo</output>
+  </fieldset>
 
   <div class="wrapper">
     <header class="sidebar">
@@ -50,29 +73,6 @@
           <a href="https://github.com/Lucky-Wang-Chenlong" title="GitHub"><i class="fa-brands fa-github"></i></a>
           <a href="https://www.linkedin.com/in/chenlong-wang-a4317036b/?skipRedirect=true" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
         </div>
-
-        <fieldset class="cursor-picker" hidden>
-          <legend>Pick your cursor</legend>
-          <div class="cursor-options">
-            <label class="cursor-option" title="Cockatoo · 葵花鹦鹉">
-              <input type="radio" name="bird-cursor" value="cockatoo" aria-label="Cockatoo · 葵花鹦鹉" data-name="Cockatoo" checked>
-              <span class="cursor-swatch"><img src="assets/img/cursor/cockatoo.png" width="32" height="32" alt=""></span>
-            </label>
-            <label class="cursor-option" title="Lutino cockatiel · 黄化玄凤">
-              <input type="radio" name="bird-cursor" value="cockatiel" aria-label="Lutino cockatiel · 黄化玄凤" data-name="Lutino cockatiel">
-              <span class="cursor-swatch"><img src="assets/img/cursor/cockatiel.png" width="32" height="32" alt=""></span>
-            </label>
-            <label class="cursor-option" title="Toucan · 巨嘴鸟">
-              <input type="radio" name="bird-cursor" value="toucan" aria-label="Toucan · 巨嘴鸟" data-name="Toucan">
-              <span class="cursor-swatch"><img src="assets/img/cursor/toucan.png" width="32" height="32" alt=""></span>
-            </label>
-            <label class="cursor-option" title="Lovebird · 牡丹鹦鹉">
-              <input type="radio" name="bird-cursor" value="lovebird" aria-label="Lovebird · 牡丹鹦鹉" data-name="Lovebird">
-              <span class="cursor-swatch"><img src="assets/img/cursor/lovebird.png" width="32" height="32" alt=""></span>
-            </label>
-          </div>
-          <output class="cursor-name" id="cursorName" aria-live="polite">Cockatoo</output>
-        </fieldset>
 
         <div class="visitor-card">
           <div class="visitor-card-title">Hi, good to see you!</div>
