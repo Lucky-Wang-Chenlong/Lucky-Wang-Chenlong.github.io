@@ -170,6 +170,57 @@ BIRDS = {
 }
 
 
+# Hand-drawn beak patches for the pressed frame. Keep the head, body, and
+# upper-beak hotspot fixed; lower the bottom beak and expose a pink tongue.
+OPEN_BEAKS = {
+    "cockatoo": (4, 13, [
+        "KGGGKW",
+        "KGGKKW",
+        ".KK.MK",
+        "...KPK",
+        ".KGGKW",
+        "..KKWW",
+    ]),
+    "cockatiel": (5, 12, [
+        "KGGKL",
+        "KGKKL",
+        ".K.MK",
+        "..KPK",
+        ".KGKL",
+        "..KKL",
+    ]),
+    "toucan": (2, 11, [
+        "KBBKKKKKKKKKK",
+        ".KK........MK",
+        "..........MPK",
+        "........KRRRK",
+        ".....KKKOOOK.",
+        "...KKOOOOK...",
+        "...KRRKKK....",
+        "....KK.......",
+    ]),
+    "lovebird": (5, 10, [
+        "KRRKFF",
+        "KORKFF",
+        ".KK.MK",
+        "...KPK",
+        ".KRRKF",
+        "..KKFF",
+    ]),
+}
+PALETTE["M"] = (137, 57, 72, 255)
+
+
+def open_beak(name, drawing):
+    rows = drawing.strip().splitlines() if isinstance(drawing, str) else drawing
+    rows = [row.ljust(32, ".") for row in rows]
+    x, y, patch = OPEN_BEAKS[name]
+    for offset, pixels in enumerate(patch):
+        row = rows[y + offset]
+        rows[y + offset] = row[:x] + pixels + row[x + len(pixels):]
+    return rows
+
+
 def chunk(kind, data):
     return (
         struct.pack(">I", len(data))
@@ -202,3 +253,4 @@ def draw(name, drawing):
 if __name__ == "__main__":
     for name, drawing in BIRDS.items():
         draw(name, drawing)
+        draw(f"{name}-open", open_beak(name, drawing))

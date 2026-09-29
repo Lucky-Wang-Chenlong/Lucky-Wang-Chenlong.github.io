@@ -26,9 +26,42 @@
 
   let position = null;
   let hotspot = hotspots.cockatoo;
+  let pressed = false;
+  let activeBird = 'cockatoo';
+  const frames = {};
+
+  // Preload the pressed frames so the first click can animate immediately.
+  choices.forEach(function (choice) {
+    const closed = choice.closest('label').querySelector('img');
+    const open = new Image();
+    frames[choice.value] = { closed: closed, open: open };
+    open.addEventListener('load', function () {
+      if (activeBird === choice.value && pressed) {
+        updatePointerImage();
+        renderPointer();
+      }
+    });
+    open.src = new URL(choice.value + '-open.png', closed.src).href;
+  });
+
+  function updatePointerImage() {
+    const bird = frames[activeBird];
+    const frame = pressed && bird.open.complete && bird.open.naturalWidth
+      ? bird.open : bird.closed;
+    if (pointer.src !== frame.src) pointer.src = frame.src;
+  }
+
+  function updateMouse(event) {
+    position = { x: event.clientX, y: event.clientY };
+    pressed = (event.buttons & 1) !== 0;
+    updatePointerImage();
+    renderPointer();
+  }
 
   function hidePointer() {
     position = null;
+    pressed = false;
+    updatePointerImage();
     pointer.hidden = true;
     root.removeAttribute('data-bird-pointer');
   }
@@ -49,12 +82,17 @@
       hidePointer();
       return;
     }
-    position = { x: event.clientX, y: event.clientY };
-    renderPointer();
+    updateMouse(event);
   }, { passive: true });
   document.addEventListener('pointerdown', function (event) {
-    if (event.pointerType !== 'mouse') hidePointer();
+    if (event.pointerType === 'mouse') updateMouse(event);
+    else hidePointer();
   }, { passive: true });
+  window.addEventListener('pointerup', function (event) {
+    if (event.pointerType === 'mouse') updateMouse(event);
+    else hidePointer();
+  }, { passive: true });
+  window.addEventListener('pointercancel', hidePointer);
   root.addEventListener('pointerleave', hidePointer);
   window.addEventListener('blur', hidePointer);
   document.addEventListener('visibilitychange', function () {
@@ -68,11 +106,12 @@
 
     selected.checked = true;
     root.dataset.cursor = selected.value;
+    activeBird = selected.value;
     hotspot = hotspots[selected.value];
     // Load from the same image the picker displays, avoiding CSS URL ambiguity.
     pointer.hidden = true;
     root.removeAttribute('data-bird-pointer');
-    pointer.src = selected.closest('label').querySelector('img').src;
+    updatePointerImage();
     renderPointer();
     caption.textContent = selected.dataset.name;
     return selected.value;
