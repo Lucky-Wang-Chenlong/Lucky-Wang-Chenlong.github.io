@@ -307,8 +307,62 @@ BIRDS = {
 }
 
 
-# The night heron stretches its neck instead of opening its beak.
+def cockatoo_spread_wings():
+    """Sweep both wings backward from a reshaped shoulder and breast."""
+    grid = [["."] * 32 for _ in range(32)]
+    # The bird faces left, so both wings extend to the right. The farther wing
+    # rises behind the neck; the nearer wing fans out below it in perspective.
+    pixel_polygon(grid, "K", [(18, 18), (20, 13), (23, 9), (27, 6), (30, 4),
+                              (31, 4), (31, 8), (29, 11), (30, 10), (30, 13),
+                              (26, 17), (22, 20)])
+    pixel_polygon(grid, "W", [(19, 18), (21, 13), (24, 10), (28, 7), (30, 6),
+                              (30, 8), (27, 12), (29, 12), (25, 16), (22, 19)])
+    pixel_polygon(grid, "L", [(20, 17), (23, 13), (26, 11), (24, 15), (22, 18)])
+    pixel_line(grid, "S", [(29, 8), (25, 13)])
+    pixel_line(grid, "S", [(28, 13), (24, 16)])
+
+    # Open the shoulder and narrow the belly, replacing the resting sprite's
+    # folded wing. Keep the face, crest, beak hotspot, tail, and feet anchored.
+    pixel_polygon(grid, "K", [(7, 16), (18, 16), (21, 19), (21, 23), (18, 26),
+                              (16, 28), (12, 28), (9, 25), (7, 22)])
+    pixel_polygon(grid, "W", [(8, 16), (17, 16), (20, 19), (20, 23), (17, 26),
+                              (15, 27), (12, 27), (10, 24), (8, 22)])
+    pixel_polygon(grid, "S", [(17, 19), (20, 20), (20, 23), (17, 26), (15, 27),
+                              (13, 26), (16, 24)])
+    for y, row in enumerate(PIXELS[:17]):
+        for x, color in enumerate(row):
+            if color != ".":
+                grid[y][x] = color
+
+    # A continuous pale shoulder leads into long, backward-pointing feathers.
+    pixel_polygon(grid, "K", [(13, 19), (16, 17), (21, 16), (26, 14), (30, 11),
+                              (31, 11), (31, 15), (29, 18), (31, 17), (31, 20),
+                              (28, 22), (29, 22), (26, 25), (22, 26), (18, 25),
+                              (15, 23)])
+    pixel_polygon(grid, "W", [(14, 19), (17, 18), (22, 17), (27, 15), (30, 13),
+                              (30, 15), (27, 19), (30, 19), (27, 21), (24, 24),
+                              (21, 25), (18, 24), (16, 22)])
+    pixel_polygon(grid, "L", [(17, 20), (22, 19), (27, 17), (25, 21), (22, 24),
+                              (19, 23)])
+    pixel_line(grid, "S", [(29, 15), (25, 19), (23, 20)])
+    pixel_line(grid, "S", [(28, 20), (24, 23), (22, 24)])
+    pixel_line(grid, "S", [(18, 24), (21, 25), (25, 24)])
+    # Blend the wing root into the breast instead of leaving a dark seam.
+    pixel_polygon(grid, "W", [(12, 18), (16, 18), (18, 23), (16, 24), (13, 22)])
+    for y in range(25, 27):
+        for x in range(19, 32):
+            if PIXELS[y][x] != "." and grid[y][x] == ".":
+                grid[y][x] = PIXELS[y][x]
+    for y in range(27, 32):
+        for x, color in enumerate(PIXELS[y]):
+            if color != ".":
+                grid[y][x] = color
+    return ["".join(row) for row in grid]
+
+
+# These birds move their wings or neck instead of opening their beaks.
 PRESSED_POSES = {
+    "cockatoo": cockatoo_spread_wings(),
     "night-heron": night_heron(stretched=True),
 }
 
@@ -316,14 +370,6 @@ PRESSED_POSES = {
 # Hand-drawn beak patches for the pressed frame. Keep the head, body, and
 # upper-beak hotspot fixed; lower the bottom beak and expose a pink tongue.
 OPEN_BEAKS = {
-    "cockatoo": (4, 13, [
-        "KGGGKW",
-        "KGGKKW",
-        ".KK.MK",
-        "...KPK",
-        ".KGGKW",
-        "..KKWW",
-    ]),
     "cockatiel": (5, 12, [
         "KGGKL",
         "KGKKL",
@@ -398,6 +444,7 @@ if __name__ == "__main__":
     for name, drawing in BIRDS.items():
         draw(name, drawing)
         if name in PRESSED_POSES:
-            draw(f"{name}-tall", PRESSED_POSES[name])
+            suffix = "tall" if name == "night-heron" else "open"
+            draw(f"{name}-{suffix}", PRESSED_POSES[name])
         else:
             draw(f"{name}-open", open_beak(name, drawing))
