@@ -13,9 +13,8 @@
     cockatiel: [5, 12],
     toucan: [2, 9],
     lovebird: [5, 10],
-    'night-heron': [3, 14]
+    'night-heron': [0, 20]
   };
-  const pressedHotspots = { 'night-heron': [3, 7] };
   const pointer = document.createElement('img');
   pointer.className = 'bird-pointer';
   pointer.alt = '';
@@ -51,9 +50,7 @@
     const bird = frames[activeBird];
     const frame = pressed && bird.open.complete && bird.open.naturalWidth
       ? bird.open : bird.closed;
-    hotspot = frame === bird.open
-      ? pressedHotspots[activeBird] || hotspots[activeBird]
-      : hotspots[activeBird];
+    // Keep the canvas anchored while the night heron's head rises within it.
     if (pointer.src !== frame.src) pointer.src = frame.src;
   }
 
@@ -114,6 +111,7 @@
     root.dataset.cursor = selected.value;
     activeBird = selected.value;
     hotspot = hotspots[selected.value];
+    pointer.style.width = (selected.dataset.cursorWidth || 32) + 'px';
     // Load from the same image the picker displays, avoiding CSS URL ambiguity.
     pointer.hidden = true;
     root.removeAttribute('data-bird-pointer');

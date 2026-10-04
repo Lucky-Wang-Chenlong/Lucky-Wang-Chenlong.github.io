@@ -25,7 +25,7 @@ html {
 }
 
 :root[data-cursor="night-heron"] {
-  --bird-cursor: url("../img/cursor/night-heron.png") 3 14;
+  --bird-cursor: url("../img/cursor/night-heron.png?v=10") 0 20;
 }
 
 body {

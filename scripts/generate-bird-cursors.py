@@ -61,48 +61,147 @@ PALETTE = {
     "A": (177, 220, 109, 255),
 }
 
+# Use the other birds' crisp cream, slate, and warm accent colors.
+PALETTE.update({
+    color: PALETTE[shared]
+    for color, shared in {
+        "h": "W", "s": "S", "d": "G", "b": "K", "l": "B",
+        "q": "Y", "a": "C", "r": "R", "w": "W",
+    }.items()
+})
+
+
+def pixel_polygon(grid, color, points):
+    """Fill a hand-authored polygon on an integer pixel grid, without smoothing."""
+    for y in range(len(grid)):
+        for x in range(len(grid[y])):
+            px, py = x + 0.5, y + 0.5
+            inside = False
+            for (ax, ay), (bx, by) in zip(points, points[1:] + points[:1]):
+                if (ay > py) != (by > py):
+                    if px < (bx - ax) * (py - ay) / (by - ay) + ax:
+                        inside = not inside
+            if inside:
+                grid[y][x] = color
+
+
+def pixel_line(grid, color, points):
+    """Draw one-pixel feather, bill, and leg details with Bresenham's line."""
+    for (x, y), (end_x, end_y) in zip(points, points[1:]):
+        dx, dy = abs(end_x - x), -abs(end_y - y)
+        sx, sy = (1 if x < end_x else -1), (1 if y < end_y else -1)
+        error = dx + dy
+        while True:
+            if 0 <= y < len(grid) and 0 <= x < len(grid[y]):
+                grid[y][x] = color
+            if x == end_x and y == end_y:
+                break
+            twice = 2 * error
+            if twice >= dy:
+                error += dy
+                x += sx
+            if twice <= dx:
+                error += dx
+                y += sy
+
+
+def night_heron(stretched=False):
+    """A broad, level body with a continuous tucked or extended throat."""
+    grid = [["."] * 40 for _ in range(44)]
+    head_shift = 2 if stretched else 3
+
+    def body_polygon(color, points):
+        # Tuck the extended pose's breast inward by one pixel.
+        pixel_polygon(grid, color, [
+            (x + int(stretched and x < 21 and 23 <= y <= 32), y)
+            for x, y in points
+        ])
+    # Slender bent legs and toes, behind the body. These never move on click.
+    pixel_polygon(grid, "a", [(24, 32), (27, 33), (24, 38), (20, 42), (18, 42), (22, 37)])
+    pixel_polygon(grid, "q", [(24, 33), (26, 33), (23, 38), (19, 41), (18, 41), (22, 37)])
+    pixel_line(grid, "a", [(28, 34), (27, 37), (25, 40), (28, 40)])
+    pixel_line(grid, "q", [(27, 35), (26, 37), (24, 40)])
+    pixel_line(grid, "K", [(15, 42), (19, 41), (24, 41)])
+    pixel_line(grid, "a", [(16, 41), (20, 40), (23, 40)])
+    # Widen the breast and belly, flatten the back, and lift the tail. These
+    # contours are redrawn on the grid rather than rotating the old sprite.
+    body_polygon("K", [(12, 23), (21, 22), (28, 23), (33, 25), (39, 29), (39, 31), (34, 30), (30, 33), (25, 35), (17, 34), (12, 32), (9, 29), (9, 26)])
+    body_polygon("s", [(12, 24), (21, 23), (28, 24), (33, 26), (38, 29), (38, 30), (33, 29), (29, 32), (25, 34), (17, 33), (12, 31), (10, 28), (10, 26)])
+    body_polygon("h", [(12, 24), (20, 24), (23, 27), (28, 30), (31, 31), (25, 33), (18, 32), (13, 30), (11, 28), (11, 26)])
+
+    # Overlap the neck with the breast so the body's top outline cannot split
+    # the two. Both poses keep the tail and feet in place.
+    upper = [["."] * 40 for _ in range(28)]
+
+    def neck_polygon(target, color, points):
+        # Follow the head leftward, tapering the shift into the fixed breast.
+        pixel_polygon(target, color, [
+            (x - max(0, min(head_shift, (26 - y) // 2))
+             + int(stretched and x <= 15 and y >= 24), y)
+            for x, y in points
+        ])
+
+    if stretched:
+        neck_polygon(upper, "K", [(15, 12), (27, 12), (27, 17), (28, 20), (29, 23), (31, 26), (31, 28), (9, 28), (10, 24), (14, 21), (15, 17)])
+        throat = [(16, 12), (21, 12), (22, 16), (22, 19), (24, 22), (27, 25), (27, 28), (10, 28), (11, 25), (15, 22), (16, 18)]
+        throat_shadow = [(20, 15), (22, 16), (22, 19), (24, 22), (27, 25), (27, 28), (24, 28), (22, 24), (20, 21), (20, 18)]
+        neck_back = [(22, 11), (26, 12), (26, 17), (27, 20), (28, 23), (30, 26), (30, 28), (26, 28), (24, 24), (22, 21), (21, 17), (21, 13)]
+    else:
+        neck_polygon(upper, "K", [(14, 19), (20, 20), (26, 22), (29, 25), (31, 28), (9, 28), (10, 24)])
+        throat = [(15, 20), (20, 21), (24, 23), (27, 26), (27, 28), (10, 28), (11, 25)]
+        throat_shadow = [(22, 22), (24, 23), (27, 26), (27, 28), (24, 28), (23, 25)]
+        neck_back = [(23, 20), (25, 21), (28, 24), (30, 27), (30, 28), (26, 28), (24, 25), (22, 23)]
+    rise = -8 if stretched else 0
+
+    def head_polygon(color, points):
+        pixel_polygon(upper, color, [(x - head_shift, y + rise) for x, y in points])
+
+    head_polygon("K", [(10, 16), (11, 14), (14, 12), (18, 11), (22, 12), (25, 15), (27, 18), (28, 21), (26, 23), (22, 23), (18, 22), (14, 20), (11, 18)])
+    head_polygon("b", [(11, 15), (14, 13), (18, 12), (21, 12), (24, 15), (26, 18), (27, 22), (25, 23), (22, 19), (18, 15)])
+    head_polygon("l", [(14, 13), (18, 12), (21, 13), (25, 17), (23, 16), (20, 14)])
+    head_polygon("h", [(11, 16), (14, 15), (17, 13), (20, 14), (21, 17), (23, 20), (25, 22), (21, 22), (17, 20), (13, 18)])
+    head_polygon("s", [(14, 19), (18, 20), (22, 21), (25, 23), (21, 23), (17, 21)])
+    # Fill the throat after the head: its lower outline must not draw a dark
+    # crossbar through the neck. Carry the same fill into the broad breast.
+    neck_polygon(upper, "h", throat)
+    neck_polygon(upper, "s", throat_shadow)
+    # Extend the slate nape alongside the pale throat, all the way to the wing.
+    neck_polygon(upper, "l", neck_back)
+    # Keep the bill tip inside the canvas as the tucked head moves forward.
+    pixel_polygon(upper, "K", [(max(0, x - head_shift), y + rise)
+                               for x, y in [(2, 21), (6, 17), (11, 15), (12, 16), (11, 18), (7, 20)]])
+    pixel_polygon(upper, "G", [(max(0, x - head_shift), y + rise)
+                               for x, y in [(3, 20), (10, 16), (10, 17)]])
+    # Red iris, dark pupil, pale eyebrow, and two fine trailing nape plumes.
+    for x, y, color in [(14, 15, "a"), (15, 15, "r"), (16, 15, "a"),
+                        (14, 16, "r"), (15, 16, "K"), (16, 16, "r"),
+                        (14, 17, "a"), (15, 17, "r"), (16, 17, "a"),
+                        (14, 14, "h"), (15, 14, "h")]:
+        upper[y + rise][x - head_shift] = color
+    pixel_line(upper, "w", [(x - head_shift, y + rise)
+                            for x, y in [(21, 12), (25, 12), (29, 14), (33, 17), (36, 21)]])
+    pixel_line(upper, "s", [(x - head_shift, y + rise)
+                            for x, y in [(22, 13), (27, 15), (31, 18)]])
+    for y, row in enumerate(upper):
+        for x, color in enumerate(row):
+            if color != ".":
+                grid[y][x] = color
+    # The wing follows the flatter back, with a broad slate panel and a short
+    # raised tail. Draw it last to blend the neck's rear edge into the shoulder.
+    pixel_polygon(grid, "b", [(22, 23), (28, 23), (33, 25), (39, 29), (39, 31), (34, 30), (30, 32), (25, 30), (21, 27)])
+    pixel_polygon(grid, "l", [(23, 24), (28, 24), (32, 26), (37, 29), (33, 29), (29, 31), (25, 29), (22, 26)])
+    pixel_polygon(grid, "d", [(22, 26), (26, 29), (30, 31), (33, 29), (35, 30), (30, 32), (25, 30)])
+    if stretched:
+        # Keep the slate fill continuous across the wing's top outline too.
+        neck_polygon(grid, "l", [(24, 21), (26, 21), (28, 23), (29, 25), (26, 25), (24, 23)])
+    pixel_line(grid, "l", [(34, 29), (37, 30)])
+    return ["".join(row) for row in grid]
+
 
 # Short rows are padded with transparency to keep the drawings easy to edit.
 BIRDS = {
     "cockatoo": PIXELS,
-    "night-heron": """
-................................
-................................
-................................
-................................
-................................
-................................
-................................
-................................
-................................
-................................
-............KKKKKKK
-...........KBBBBBBBK
-..........KBBBBBBBBBK
-.........KWWWKRKWWBBK
-...KKKKKKKWWWKRKWWBBK
-....KBBBBKWWWWWWWWBBK
-.....KKKKKWWWWWWWBBBK
-..........KWWWWWBBBKWWK
-..........KWWWWWBBBGKKWWK
-.........KWWWWWSSSSGGGKWWK
-.........KWWWWSSSSSSGGGK
-.........KWWWWSSKGGGGGGK
-.........KWWWSSSKSSGGGGK
-..........KWWSSSKSSSGGGK
-..........KWWSSSKSSSGGGK
-..........KWWSSSKSSSGGGK
-..........KWWSSSSSSGGGK
-..........KWWSSSSSSGGGK
-..........KWWSSSSSSGGGK
-...........KWWSSSSGGGK
-............KKSSSSKKK
-.............KYK..KYK
-.............KYK..KYK
-............KYYK.KYYK
-...........KKKKK.KKKKK
-................................
-""",
+    "night-heron": night_heron(),
     "cockatiel": """
 ................................
 ................K
@@ -210,44 +309,7 @@ BIRDS = {
 
 # The night heron stretches its neck instead of opening its beak.
 PRESSED_POSES = {
-    "night-heron": """
-................................
-................................
-................................
-............KKKKKKK
-...........KBBBBBBBK
-..........KBBBBBBBBBK
-.........KWWWKRKWWBBK
-...KKKKKKKWWWKRKWWBBK
-....KBBBBKWWWWWWWWBBK
-.....KKKKKWWWWWWWBBBK
-...........KWWWWBBBKWWK
-............KWWWBBK.KWWK
-............KWWWBBK..KWWK
-............KWWWBBK
-............KWWWBBK
-............KWWWBBK
-............KWWWBBBK
-...........KWWWWSSBBK
-...........KWWWWSSSGGK
-..........KWWWWSSSSGGGK
-..........KWWWSSKGGGGGK
-..........KWWWSSKSSGGGK
-..........KWWWSSKSSSGGK
-..........KWWWSSSSSGGGK
-..........KWWWSSSSSGGGK
-..........KWWWSSSSSGGGK
-...........KWWSSSSGGGK
-...........KWWSSSSGGGK
-...........KWWSSSSGGGK
-...........KWWSSSSGGGK
-............KKSSSSKKK
-.............KYK..KYK
-.............KYK..KYK
-............KYYK.KYYK
-...........KKKKK.KKKKK
-................................
-""",
+    "night-heron": night_heron(stretched=True),
 }
 
 
@@ -313,16 +375,16 @@ def chunk(kind, data):
 
 def draw(name, drawing):
     rows = drawing.strip().splitlines() if isinstance(drawing, str) else drawing
-    height = 36 if name.startswith("night-heron") else 32
-    assert len(rows) == height and all(len(row) <= 32 for row in rows), name
-    rows = [row.ljust(32, ".") for row in rows]
+    width, height = (40, 44) if name.startswith("night-heron") else (32, 32)
+    assert len(rows) == height and all(len(row) <= width for row in rows), name
+    rows = [row.ljust(width, ".") for row in rows]
     scanlines = b"".join(
         b"\x00" + b"".join(bytes(PALETTE[pixel]) for pixel in row)
         for row in rows
     )
     png = (
         b"\x89PNG\r\n\x1a\n"
-        + chunk(b"IHDR", struct.pack(">IIBBBBB", 32, height, 8, 6, 0, 0, 0))
+        + chunk(b"IHDR", struct.pack(">IIBBBBB", width, height, 8, 6, 0, 0, 0))
         + chunk(b"IDAT", zlib.compress(scanlines, 9))
         + chunk(b"IEND", b"")
     )
