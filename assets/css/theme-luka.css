@@ -99,6 +99,10 @@ body.theme-luka {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+::selection {
+  background: var(--luka-border);
+}
+
 body.theme-luka a {
   color: var(--luka-accent);
   text-decoration: none;
