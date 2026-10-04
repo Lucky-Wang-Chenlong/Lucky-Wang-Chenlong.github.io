@@ -1,4 +1,4 @@
-"""Draw hand-authored 32 x 32 bird cursors (Python standard library only)."""
+"""Draw hand-authored pixel bird cursors (Python standard library only)."""
 
 from pathlib import Path
 import struct
@@ -65,6 +65,44 @@ PALETTE = {
 # Short rows are padded with transparency to keep the drawings easy to edit.
 BIRDS = {
     "cockatoo": PIXELS,
+    "night-heron": """
+................................
+................................
+................................
+................................
+................................
+................................
+................................
+................................
+................................
+................................
+............KKKKKKK
+...........KBBBBBBBK
+..........KBBBBBBBBBK
+.........KWWWKRKWWBBK
+...KKKKKKKWWWKRKWWBBK
+....KBBBBKWWWWWWWWBBK
+.....KKKKKWWWWWWWBBBK
+..........KWWWWWBBBKWWK
+..........KWWWWWBBBGKKWWK
+.........KWWWWWSSSSGGGKWWK
+.........KWWWWSSSSSSGGGK
+.........KWWWWSSKGGGGGGK
+.........KWWWSSSKSSGGGGK
+..........KWWSSSKSSSGGGK
+..........KWWSSSKSSSGGGK
+..........KWWSSSKSSSGGGK
+..........KWWSSSSSSGGGK
+..........KWWSSSSSSGGGK
+..........KWWSSSSSSGGGK
+...........KWWSSSSGGGK
+............KKSSSSKKK
+.............KYK..KYK
+.............KYK..KYK
+............KYYK.KYYK
+...........KKKKK.KKKKK
+................................
+""",
     "cockatiel": """
 ................................
 ................K
@@ -170,6 +208,49 @@ BIRDS = {
 }
 
 
+# The night heron stretches its neck instead of opening its beak.
+PRESSED_POSES = {
+    "night-heron": """
+................................
+................................
+................................
+............KKKKKKK
+...........KBBBBBBBK
+..........KBBBBBBBBBK
+.........KWWWKRKWWBBK
+...KKKKKKKWWWKRKWWBBK
+....KBBBBKWWWWWWWWBBK
+.....KKKKKWWWWWWWBBBK
+...........KWWWWBBBKWWK
+............KWWWBBK.KWWK
+............KWWWBBK..KWWK
+............KWWWBBK
+............KWWWBBK
+............KWWWBBK
+............KWWWBBBK
+...........KWWWWSSBBK
+...........KWWWWSSSGGK
+..........KWWWWSSSSGGGK
+..........KWWWSSKGGGGGK
+..........KWWWSSKSSGGGK
+..........KWWWSSKSSSGGK
+..........KWWWSSSSSGGGK
+..........KWWWSSSSSGGGK
+..........KWWWSSSSSGGGK
+...........KWWSSSSGGGK
+...........KWWSSSSGGGK
+...........KWWSSSSGGGK
+...........KWWSSSSGGGK
+............KKSSSSKKK
+.............KYK..KYK
+.............KYK..KYK
+............KYYK.KYYK
+...........KKKKK.KKKKK
+................................
+""",
+}
+
+
 # Hand-drawn beak patches for the pressed frame. Keep the head, body, and
 # upper-beak hotspot fixed; lower the bottom beak and expose a pink tongue.
 OPEN_BEAKS = {
@@ -232,7 +313,8 @@ def chunk(kind, data):
 
 def draw(name, drawing):
     rows = drawing.strip().splitlines() if isinstance(drawing, str) else drawing
-    assert len(rows) == 32 and all(len(row) <= 32 for row in rows), name
+    height = 36 if name.startswith("night-heron") else 32
+    assert len(rows) == height and all(len(row) <= 32 for row in rows), name
     rows = [row.ljust(32, ".") for row in rows]
     scanlines = b"".join(
         b"\x00" + b"".join(bytes(PALETTE[pixel]) for pixel in row)
@@ -240,7 +322,7 @@ def draw(name, drawing):
     )
     png = (
         b"\x89PNG\r\n\x1a\n"
-        + chunk(b"IHDR", struct.pack(">IIBBBBB", 32, 32, 8, 6, 0, 0, 0))
+        + chunk(b"IHDR", struct.pack(">IIBBBBB", 32, height, 8, 6, 0, 0, 0))
         + chunk(b"IDAT", zlib.compress(scanlines, 9))
         + chunk(b"IEND", b"")
     )
@@ -253,4 +335,7 @@ def draw(name, drawing):
 if __name__ == "__main__":
     for name, drawing in BIRDS.items():
         draw(name, drawing)
-        draw(f"{name}-open", open_beak(name, drawing))
+        if name in PRESSED_POSES:
+            draw(f"{name}-tall", PRESSED_POSES[name])
+        else:
+            draw(f"{name}-open", open_beak(name, drawing))

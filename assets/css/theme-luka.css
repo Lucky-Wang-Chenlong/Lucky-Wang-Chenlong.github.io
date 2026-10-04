@@ -24,6 +24,10 @@ html {
   --bird-cursor: url("../img/cursor/lovebird.png") 5 10;
 }
 
+:root[data-cursor="night-heron"] {
+  --bird-cursor: url("../img/cursor/night-heron.png") 3 14;
+}
+
 body {
   margin: 0;
 }
@@ -299,7 +303,7 @@ body.theme-luka .cursor-swatch {
 
 body.theme-luka .cursor-swatch img {
   width: 32px;
-  height: 32px;
+  height: auto;
   image-rendering: pixelated;
 }
 
@@ -324,7 +328,7 @@ body.theme-luka .bird-pointer {
   top: 0;
   left: 0;
   width: 32px;
-  height: 32px;
+  height: auto;
   z-index: 2147483647;
   pointer-events: none;
   user-select: none;

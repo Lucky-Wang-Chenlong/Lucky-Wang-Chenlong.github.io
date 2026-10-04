@@ -12,8 +12,10 @@
     cockatoo: [4, 13],
     cockatiel: [5, 12],
     toucan: [2, 9],
-    lovebird: [5, 10]
+    lovebird: [5, 10],
+    'night-heron': [3, 14]
   };
+  const pressedHotspots = { 'night-heron': [3, 7] };
   const pointer = document.createElement('img');
   pointer.className = 'bird-pointer';
   pointer.alt = '';
@@ -41,13 +43,17 @@
         renderPointer();
       }
     });
-    open.src = new URL(choice.value + '-open.png', closed.src).href;
+    const pressedFilename = choice.dataset.pressedSrc || choice.value + '-open.png';
+    open.src = new URL(pressedFilename, closed.src).href;
   });
 
   function updatePointerImage() {
     const bird = frames[activeBird];
     const frame = pressed && bird.open.complete && bird.open.naturalWidth
       ? bird.open : bird.closed;
+    hotspot = frame === bird.open
+      ? pressedHotspots[activeBird] || hotspots[activeBird]
+      : hotspots[activeBird];
     if (pointer.src !== frame.src) pointer.src = frame.src;
   }
 
