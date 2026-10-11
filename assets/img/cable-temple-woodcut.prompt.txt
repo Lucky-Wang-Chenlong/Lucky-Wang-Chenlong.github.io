@@ -1,0 +1,6 @@
+﻿Generated with the built-in image_gen tool.
+Reference: user-provided 冀西南林路行.png (style reference).
+Asset: assets/img/cable-temple-woodcut.png
+
+Prompt:
+Create a wide landscape website background artwork, 1536x1024 composition. The attached image is a STYLE REFERENCE only. Closely match its Chinese traditional woodcut rubbing / distressed black ink album collage aesthetic: near-black ink ground #0d0d0b, muted ash taupe #79715e engraved strokes, torn patchy old paper, densely carved hairlike curves. Original composition: a large coiled mythical qilin/dragon woodcut across the left third and lower-left, jagged Taihang mountain contours and weathered block-print fragments around the top and right edge, aged rough rectangular print frames. Main center-right area should remain mostly open black negative space for readable website text (roughly x=40%-85%). Artwork should feel intricate, raw, flat, ancient printmaking, solemn, dark, NOT modern digital fantasy art, no glossy shading. Keep edge drawings visibly detailed, with approximately the same black/taupe tonal palette as the reference. NO text, no letters, no typography anywhere: floating Chinese calligraphic titles will be separately overlaid in code. No UI, no watermark. Output the background asset only.

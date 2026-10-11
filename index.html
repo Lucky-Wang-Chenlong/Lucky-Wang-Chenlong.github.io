@@ -18,10 +18,30 @@
   <script src="https://kit.fontawesome.com/a860a211d3.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="assets/css/font_sans_serif.css">
-  <link rel="stylesheet" href="assets/css/theme-luka.css?v=bird-cursor-14">
+  <link rel="stylesheet" href="assets/css/theme-luka.css?v=cable-temple-1">
+  <link rel="stylesheet" href="assets/css/theme-cable-temple.css?v=4">
+  <script>
+    // Resolve the palette before first paint, including when storage is unavailable.
+    (function() {
+      let saved;
+      try { saved = localStorage.getItem('theme'); } catch (_) {}
+      document.documentElement.dataset.theme = saved === 'dark' || saved === 'light'
+        ? saved : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    })();
+  </script>
   <script src="assets/js/cursor-picker.js?v=bird-cursor-12" defer></script>
 </head>
 <body class="theme-luka">
+  <div class="woodcut-background" aria-hidden="true">
+    <span class="woodcut-lettering woodcut-lettering-dawn">早</span>
+    <span class="woodcut-lettering woodcut-lettering-river">泥河</span>
+    <span class="woodcut-lettering woodcut-lettering-mist">平等云雾</span>
+    <span class="woodcut-lettering woodcut-lettering-mountain">采石</span>
+    <span class="woodcut-lettering woodcut-lettering-bird">山雀</span>
+    <span class="woodcut-lettering woodcut-lettering-temple">郊眠寺</span>
+    <span class="woodcut-lettering woodcut-lettering-qilin">河北墨麒麟</span>
+    <span class="woodcut-lettering woodcut-lettering-detour">绕越</span>
+  </div>
   <nav class="top-nav">
     <div class="nav-container">
       <div class="nav-left">
@@ -301,12 +321,10 @@
         icon.classList.toggle('fa-sun', isDark);
         icon.classList.toggle('fa-moon', !isDark);
         updateThemeImages(isDark);
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        try { localStorage.setItem('theme', isDark ? 'dark' : 'light'); } catch (_) {}
       }
 
-      const savedTheme = localStorage.getItem('theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      setTheme(savedTheme ? savedTheme === 'dark' : prefersDark);
+      setTheme(document.documentElement.dataset.theme === 'dark');
 
       themeToggle.addEventListener('click', function() {
         const isDark = document.documentElement.getAttribute('data-theme') === 'dark';

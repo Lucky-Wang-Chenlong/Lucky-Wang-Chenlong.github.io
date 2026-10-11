@@ -1,0 +1,206 @@
+/* Inside the Cable Temple: soot, aged paper, and restrained woodcut borders.
+   Album reference: https://music.apple.com/album/1545534900
+   All treatments are scoped to the dark palette. */
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+[data-theme="dark"] body.theme-luka {
+  --luka-bg: #10100e;
+  isolation: isolate;
+  background-image: url("../img/paper-grain.svg");
+}
+
+/* Fixed print sits behind every interactive element; lettering is decorative. */
+.woodcut-background {
+  display: none;
+}
+
+[data-theme="dark"] .woodcut-background {
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  background: #10100e url("../img/cable-temple-woodcut.png") center / cover no-repeat;
+}
+
+[data-theme="dark"] .woodcut-background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(16, 16, 14, 0.18), rgba(16, 16, 14, 0.6) 34%, rgba(16, 16, 14, 0.88) 46%, rgba(16, 16, 14, 0.83) 83%, rgba(16, 16, 14, 0.24));
+}
+
+/* Exact windows onto the user's original artwork, not re-typeset lettering.
+   Source dimensions: 378 x 651. Keep every title's individual arrangement.
+   Screen blending removes the ink-black paper without altering source pixels. */
+.woodcut-lettering {
+  --print-scale: 1.8;
+  position: absolute;
+  z-index: 1;
+  width: calc(var(--crop-w) * var(--print-scale));
+  height: calc(var(--crop-h) * var(--print-scale));
+  background-image: url("../img/cable-temple-reference.png");
+  background-size: calc(378px * var(--print-scale)) calc(651px * var(--print-scale));
+  background-position: calc(var(--crop-x) * var(--print-scale)) calc(var(--crop-y) * var(--print-scale));
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+  opacity: 0.85;
+  color: transparent;
+  font-size: 0;
+  animation: woodcut-drift 28s ease-in-out infinite alternate;
+}
+
+.woodcut-lettering-temple {
+  --crop-x: -5px; --crop-y: -168px; --crop-w: 31px; --crop-h: 108px;
+  left: 7%; top: 12%;
+  animation-duration: 33s; animation-delay: -8s;
+}
+
+.woodcut-lettering-qilin {
+  --crop-x: -40px; --crop-y: -195px; --crop-w: 95px; --crop-h: 81px;
+  left: 12%; bottom: 8%;
+  animation-duration: 38s; animation-delay: -19s;
+}
+
+.woodcut-lettering-detour {
+  --crop-x: -138px; --crop-y: -171px; --crop-w: 22px; --crop-h: 93px;
+  left: 2%; top: 37%;
+  animation-duration: 31s; animation-delay: -15s;
+}
+
+.woodcut-lettering-bird {
+  --crop-x: -166px; --crop-y: -169px; --crop-w: 34px; --crop-h: 107px;
+  right: 3%; top: 11%;
+  animation-duration: 35s; animation-delay: -6s;
+}
+
+.woodcut-lettering-mountain {
+  --crop-x: -202px; --crop-y: -197px; --crop-w: 31px; --crop-h: 79px;
+  right: 6%; top: 42%;
+  animation-duration: 29s; animation-delay: -17s;
+}
+
+.woodcut-lettering-mist {
+  --crop-x: -240px; --crop-y: -197px; --crop-w: 21px; --crop-h: 78px;
+  right: 2%; bottom: 7%;
+  animation-duration: 34s; animation-delay: -12s;
+}
+
+.woodcut-lettering-river {
+  --crop-x: -263px; --crop-y: -169px; --crop-w: 36px; --crop-h: 107px;
+  left: 33%; bottom: 24%;
+  opacity: 0.5;
+  animation-duration: 38s; animation-delay: -8s;
+}
+
+.woodcut-lettering-dawn {
+  --crop-x: -304px; --crop-y: -241px; --crop-w: 19px; --crop-h: 34px;
+  right: 13%; top: 74%;
+  opacity: 0.5;
+  animation-duration: 32s; animation-delay: -22s;
+}
+
+@keyframes woodcut-drift {
+  from { translate: 0 0; }
+  to { translate: 8px -22px; }
+}
+
+@media (max-width: 1192px) {
+  [data-theme="dark"] .woodcut-background::after {
+    background: rgba(16, 16, 14, 0.78);
+  }
+
+  .woodcut-lettering { --print-scale: 1.1; opacity: 0.36; }
+  .woodcut-lettering-temple { left: 2%; }
+  .woodcut-lettering-qilin { left: 2%; bottom: 4%; }
+  .woodcut-lettering-detour { left: 3%; top: 30%; }
+  .woodcut-lettering-river { left: 3%; bottom: 25%; }
+  .woodcut-lettering-dawn { right: 4%; top: 69%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .woodcut-lettering { animation: none; }
+}
+
+[data-theme="dark"] body.theme-luka .top-nav {
+  background-image: url("../img/paper-grain.svg");
+  border-bottom: 3px double var(--luka-border);
+}
+
+[data-theme="dark"] body.theme-luka :is(.site-name, .section-title, .nav-left a) {
+  font-family: Georgia, "Times New Roman", "Songti SC", SimSun, serif;
+  font-weight: 400;
+  letter-spacing: 0.035em;
+}
+
+[data-theme="dark"] body.theme-luka .section-title {
+  border-bottom: 3px double var(--luka-border);
+  color: var(--luka-text);
+}
+
+[data-theme="dark"] body.theme-luka .image.avatar img {
+  padding: 7px;
+  border: 1px solid var(--luka-accent);
+  border-radius: 2px;
+  background: var(--luka-social-bg);
+  box-shadow: 0 0 0 4px var(--luka-bg), 0 0 0 5px var(--luka-border);
+  filter: sepia(0.25) saturate(0.72);
+}
+
+[data-theme="dark"] body.theme-luka :is(.social-icons a, .cursor-swatch) {
+  border: 1px solid var(--luka-border);
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+[data-theme="dark"] body.theme-luka .social-icons a:hover {
+  color: var(--luka-bg) !important;
+}
+
+[data-theme="dark"] body.theme-luka .visitor-card {
+  border-style: solid;
+  border-radius: 2px;
+  background: rgba(192, 173, 141, 0.025);
+}
+
+[data-theme="dark"] body.theme-luka .visitor-card :is(img, iframe, .visitor-map) {
+  border-radius: 0;
+  filter: grayscale(0.85) sepia(0.25) brightness(0.8);
+}
+
+[data-theme="dark"] body.theme-luka .timeline-item::before {
+  width: 1px;
+  background: var(--luka-border);
+}
+
+[data-theme="dark"] body.theme-luka .publications ol.bibliography li {
+  border-left: 1px solid var(--luka-border);
+}
+
+[data-theme="dark"] body.theme-luka .pub-cover img {
+  border-radius: 2px;
+}
+
+[data-theme="dark"] body.theme-luka .section-body a {
+  text-decoration: underline;
+  text-decoration-color: var(--luka-border);
+  text-underline-offset: 3px;
+}
+
+[data-theme="dark"] body.theme-luka a:hover {
+  text-decoration-color: var(--luka-accent);
+}
+
+[data-theme="dark"] body.theme-luka :is(a, button):focus-visible {
+  outline: 2px solid var(--luka-accent);
+  outline-offset: 4px;
+}
+
+[data-theme="dark"] ::selection {
+  background: #c0ad8d;
+  color: #191814;
+}
