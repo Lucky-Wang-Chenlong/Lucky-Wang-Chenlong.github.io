@@ -24,7 +24,50 @@ html[data-theme="dark"] {
   overflow: hidden;
   pointer-events: none;
   user-select: none;
-  background: #10100e url("../img/cable-temple-woodcut.png") center / cover no-repeat;
+  background-color: #10100e;
+}
+
+[data-theme="dark"] .woodcut-background::before {
+  content: "";
+  position: absolute;
+  inset: 60px auto 0 0;
+  width: min(76vw, 1100px);
+  /* Crop the printed outer frame and fade the two horizontal plate rules. */
+  background: url("../img/cable-temple-column-texture.png") center / 104% 104% no-repeat;
+  opacity: 0.76;
+  mask-image:
+    linear-gradient(to right, #000 88%, transparent),
+    linear-gradient(to bottom, #000 28%, transparent 30.9%, #000 34%, #000 67%, transparent 70.4%, #000 74%);
+  mask-composite: intersect;
+}
+
+[data-theme="dark"] .woodcut-qilin {
+  position: absolute;
+  left: 0;
+  top: calc(50% + 30px);
+  width: min(76vw, 1100px);
+  aspect-ratio: 2 / 1;
+  transform: translateY(-50%);
+  /* Preserve the accepted drawing; hide only its narrow printed frame. */
+  background: url("../img/cable-temple-qilin-reference.png") center / 104% 104% no-repeat;
+  opacity: 0.76;
+  mask-image:
+    linear-gradient(to right, #000 88%, transparent),
+    linear-gradient(to bottom, transparent, #000 4%, #000 96%, transparent);
+  mask-composite: intersect;
+}
+
+[data-theme="dark"] .woodcut-landscape {
+  position: absolute;
+  inset: 60px 0 0 auto;
+  width: min(28vw, 420px, 40vh);
+  /* Reuse only the first artwork's right-hand mountains, pines and clouds. */
+  background: url("../img/cable-temple-woodcut.png") right center / auto 100% no-repeat;
+  opacity: 0.76;
+  mask-image:
+    linear-gradient(to right, transparent, #000 80%),
+    linear-gradient(to bottom, #000 38%, transparent 40.6%, #000 43%, #000 71%, transparent 73.7%, #000 76%);
+  mask-composite: intersect;
 }
 
 [data-theme="dark"] .woodcut-background::after {
@@ -36,9 +79,9 @@ html[data-theme="dark"] {
 
 /* Exact windows onto the user's original artwork, not re-typeset lettering.
    Source dimensions: 378 x 651. Keep every title's individual arrangement.
-   Screen blending removes the ink-black paper without altering source pixels. */
+   Sharpen only at render time; preserve the original source and glyph shapes. */
 .woodcut-lettering {
-  --print-scale: 1.8;
+  --print-scale: 1.5;
   position: absolute;
   z-index: 1;
   width: calc(var(--crop-w) * var(--print-scale));
@@ -48,7 +91,8 @@ html[data-theme="dark"] {
   background-position: calc(var(--crop-x) * var(--print-scale)) calc(var(--crop-y) * var(--print-scale));
   background-repeat: no-repeat;
   mix-blend-mode: screen;
-  opacity: 0.85;
+  filter: url("#woodcut-ink-sharpen") contrast(1.32) brightness(1.5);
+  opacity: 0.93;
   color: transparent;
   font-size: 0;
   animation: woodcut-drift 28s ease-in-out infinite alternate;
@@ -93,14 +137,14 @@ html[data-theme="dark"] {
 .woodcut-lettering-river {
   --crop-x: -263px; --crop-y: -169px; --crop-w: 36px; --crop-h: 107px;
   left: 33%; bottom: 24%;
-  opacity: 0.5;
+  opacity: 0.65;
   animation-duration: 38s; animation-delay: -8s;
 }
 
 .woodcut-lettering-dawn {
   --crop-x: -304px; --crop-y: -241px; --crop-w: 19px; --crop-h: 34px;
   right: 13%; top: 74%;
-  opacity: 0.5;
+  opacity: 0.65;
   animation-duration: 32s; animation-delay: -22s;
 }
 
@@ -110,11 +154,16 @@ html[data-theme="dark"] {
 }
 
 @media (max-width: 1192px) {
-  [data-theme="dark"] .woodcut-background::after {
-    background: rgba(16, 16, 14, 0.78);
+  [data-theme="dark"] .woodcut-background::before,
+  [data-theme="dark"] .woodcut-qilin {
+    width: 100%;
   }
 
-  .woodcut-lettering { --print-scale: 1.1; opacity: 0.36; }
+  [data-theme="dark"] .woodcut-background::after {
+    background: linear-gradient(90deg, rgba(16, 16, 14, 0.36), rgba(16, 16, 14, 0.58) 17%, rgba(16, 16, 14, 0.86) 26%, rgba(16, 16, 14, 0.82) 90%, rgba(16, 16, 14, 0.44));
+  }
+
+  .woodcut-lettering { --print-scale: 1; opacity: 0.72; }
   .woodcut-lettering-temple { left: 2%; }
   .woodcut-lettering-qilin { left: 2%; bottom: 4%; }
   .woodcut-lettering-detour { left: 3%; top: 30%; }

@@ -1,0 +1,7 @@
+Mode: built-in image_gen, edit existing background.
+Input: cable-temple-woodcut.png
+Output: cable-temple-woodcut-hd.png
+Actual output dimensions: 1536 x 1024. The requested larger dimensions were not returned; this version improves edge definition and contrast at the original resolution.
+
+Prompt:
+Edit and enhance the attached EXISTING website background artwork for much sharper display on large/high-density screens. Output at 3072x2048 or the highest supported landscape resolution, keeping EXACTLY the same 3:2 composition, same coiled qilin dragon on the left, same mountain print fragments around edges, same open dark center-right negative space, and same black and ash-taupe palette. Restore very crisp fine engraved strokes, sharply separated hairlike curves and scales, clear woodcut edges and tiny weathered ink speckles. Remove soft fuzzy blur/compression haze. This is meticulous high-resolution print restoration, not a redesign. Do not add subjects, letters, calligraphy, frames, scenery, glow, shadows or gradients. Keep texture of old carved woodblock ink, not smooth digital outlines. Keep all objects in precisely the same positions and proportions as the input. Crisp antique print scan with sharply defined marks.

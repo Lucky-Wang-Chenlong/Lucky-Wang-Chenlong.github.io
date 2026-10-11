@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="assets/css/font_sans_serif.css">
   <link rel="stylesheet" href="assets/css/theme-luka.css?v=cable-temple-1">
-  <link rel="stylesheet" href="assets/css/theme-cable-temple.css?v=4">
+  <link rel="stylesheet" href="assets/css/theme-cable-temple.css?v=12">
   <script>
     // Resolve the palette before first paint, including when storage is unavailable.
     (function() {
@@ -32,7 +32,16 @@
   <script src="assets/js/cursor-picker.js?v=bird-cursor-12" defer></script>
 </head>
 <body class="theme-luka">
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+    <defs>
+      <filter id="woodcut-ink-sharpen" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+        <feConvolveMatrix order="3" kernelMatrix="0 -0.3 0 -0.3 2.2 -0.3 0 -0.3 0" divisor="1" preserveAlpha="true"/>
+      </filter>
+    </defs>
+  </svg>
   <div class="woodcut-background" aria-hidden="true">
+    <div class="woodcut-qilin"></div>
+    <div class="woodcut-landscape"></div>
     <span class="woodcut-lettering woodcut-lettering-dawn">早</span>
     <span class="woodcut-lettering woodcut-lettering-river">泥河</span>
     <span class="woodcut-lettering woodcut-lettering-mist">平等云雾</span>
